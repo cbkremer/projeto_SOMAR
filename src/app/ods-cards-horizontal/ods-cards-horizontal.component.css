@@ -1,0 +1,62 @@
+.ods_cards_div{
+  width: 65%;
+  min-height: 350px;
+  margin: auto;
+  overflow: auto;
+}
+#the_ods_card_red{
+  background: red;
+  height: 100px;
+  width: 100px;
+  margin: 2px;
+  float: left;
+  transition: 150ms;
+  cursor: pointer;
+}
+#the_ods_card_red:hover{
+  background: rgb(122, 0, 0);
+}
+#the_ods_card_yellow{
+  background: rgb(175, 172, 0);
+  height: 100px;
+  width: 100px;
+  margin: 2px;
+  float: left;
+  transition: 150ms;
+  cursor: pointer;
+}
+#the_ods_card_yellow:hover{
+  background: rgb(77, 75, 0);
+
+}
+#the_ods_card_green{
+  background: rgb(35, 175, 0);
+  height: 100px;
+  width: 100px;
+  margin: 2px;
+  float: left;
+  transition: 150ms;
+  cursor: pointer;
+}
+#the_ods_card_green:hover{
+  background-color: rgb(0, 58, 13);
+}
+.ods_numero{
+  margin-left: 5px;
+  margin-top: 5px;
+  float: left;
+  color: rgb(255, 255, 255);
+}
+.ods_nome{
+  text-overflow: clip;
+  padding-top: 10px;
+  font-family: verdana;
+  color:rgb(255, 255, 255);
+}
+.ods_icone{
+  margin-top: 25px;
+}
+.ods_icone i{
+  font-size: 40px;
+  color:rgb(255, 255, 255);
+}

@@ -1,0 +1,38 @@
+
+<div class="ods_cards_div">
+  <div *ngFor="let ods of ods_list; let i = index">
+    <div id="the_ods_card_red" *ngIf="getOdsNumber(i) < low">
+        <div class="ods_numero">
+          {{i+1}}
+        </div>
+        <div class="ods_nome">
+          {{ods}}
+        </div>
+        <div class="ods_icone">
+          <i class="bi bi-bank"></i>
+      </div>
+    </div>
+    <div id="the_ods_card_yellow" *ngIf="getOdsNumber(i) >= low && getOdsNumber(i) < mid">
+      <div class="ods_numero">
+        {{i+1}}
+      </div>
+      <div class="ods_nome">
+        {{ods}}
+      </div>
+      <div class="ods_icone">
+        <i class="bi bi-bank"></i>
+      </div>
+    </div>
+    <div id="the_ods_card_green" *ngIf="getOdsNumber(i) >= 7">
+      <div class="ods_numero">
+        {{i+1}}
+      </div>
+      <div class="ods_nome">
+        {{ods}}
+      </div>
+      <div class="ods_icone">
+        <i class="bi bi-bank"></i>
+      </div>
+    </div>
+  </div>
+</div>
