@@ -1,0 +1,21 @@
+<section class="center_login_section">
+  <form class="default_form" (ngSubmit)="login()">
+    <label class="aviso_conta_info" *ngIf="aviso != ''">{{aviso}}</label>
+    <br>
+    <br>
+    <label class="criar_conta_label">CNPJ</label>
+    <br>
+    <br>
+    <input type="email" class="form_input" [(ngModel)]="cnpj" placeholder="12.345.678/0001-00">
+    <br>
+    <br>
+    <label class="criar_conta_label">Senha</label>
+    <br>
+    <br>
+    <input type="password" class="form_input" [(ngModel)]="password" name="password" placeholder="**************">
+    <br>
+    <br>
+    <br>
+    <button type="submit">Entrar</button>
+  </form>
+</section>

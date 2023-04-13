@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { CenterMainComponent } from './center-main/center-main.component';
 import { FooterComponent } from './footer/footer.component';
 import { OdsCardsHorizontalComponent } from './ods-cards-horizontal/ods-cards-horizontal.component';
+import { CenterLoginComponent } from './center-login/center-login.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { OdsCardsHorizontalComponent } from './ods-cards-horizontal/ods-cards-ho
     TopBarComponent,
     CenterMainComponent,
     FooterComponent,
-    OdsCardsHorizontalComponent
+    OdsCardsHorizontalComponent,
+    CenterLoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

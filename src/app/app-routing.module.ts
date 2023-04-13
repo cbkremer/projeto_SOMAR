@@ -1,10 +1,12 @@
 import { CenterMainComponent } from './center-main/center-main.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CenterLoginComponent } from './center-login/center-login.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'center-main', pathMatch: 'full'},
-  {path: 'center-main', component: CenterMainComponent}
+  {path: 'center-main', component: CenterMainComponent},
+  {path: 'center-login', component: CenterLoginComponent}
 ];
 
 @NgModule({
