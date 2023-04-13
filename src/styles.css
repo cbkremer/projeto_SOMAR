@@ -76,6 +76,9 @@ img{
   color: white;
   min-height: 100px;
   border-top: 5px solid rgb(255, 185, 55);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 /*--------------------------------------------------------------------------------ods cards*/
 .ods_cards{
@@ -87,8 +90,8 @@ img{
   margin-left: 10%;
   margin-right: 10%;
   position: absolute;
-  width: 100%;
   padding-top: 80px;
+  width: 80%;
   /*unnecessary but does not hurt*/
 }
 /*--------------------------------------------------------------------------------default form*/
