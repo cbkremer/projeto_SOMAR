@@ -1,6 +1,6 @@
 .ods_cards_div{
   width: 65%;
-  min-height: 350px;
+  height: max-content;
   margin: auto;
   overflow: auto;
 }
