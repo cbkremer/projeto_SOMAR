@@ -6,31 +6,27 @@
           {{i+1}}
         </div>
         <div class="ods_nome">
-          erradicação da pobreza
+          {{ods.nome}}
         </div>
-          <div class="ods_icone" [innerHTML]="icone"></div>
+        <div class="ods_icone" [innerHTML]="ods.icone"></div>
     </div>
     <div id="the_ods_card_yellow" *ngIf="getOdsNumber(i) >= low && getOdsNumber(i) < mid">
       <div class="ods_numero">
         {{i+1}}
       </div>
       <div class="ods_nome">
-        {{ods}}
+        {{ods.nome}}
       </div>
-      <div class="ods_icone">
-        <i class="bi bi-bank"></i>
-      </div>
+      <div class="ods_icone" [innerHTML]="ods.icone"></div>
     </div>
     <div id="the_ods_card_green" *ngIf="getOdsNumber(i) >= 7">
       <div class="ods_numero">
         {{i+1}}
       </div>
       <div class="ods_nome">
-        {{ods}}
+        {{ods.nome}}
       </div>
-      <div class="ods_icone">
-        <i class="bi bi-bank"></i>
-      </div>
+      <div class="ods_icone" [innerHTML]="ods.icone"></div>
     </div>
   </div>
 </div>

@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { OdsCardsHorizontalComponent } from './ods-cards-horizontal/ods-cards-horizontal.component';
 import { CenterLoginComponent } from './center-login/center-login.component';
 import { CenterProjetosComponent } from './center-projetos/center-projetos.component';
+import { CenterProjetoComponent } from './center-projeto/center-projeto.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CenterProjetosComponent } from './center-projetos/center-projetos.compo
     FooterComponent,
     OdsCardsHorizontalComponent,
     CenterLoginComponent,
-    CenterProjetosComponent
+    CenterProjetosComponent,
+    CenterProjetoComponent
   ],
   imports: [
     BrowserModule,
