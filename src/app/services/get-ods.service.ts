@@ -8,6 +8,6 @@ export class GetOdsService {
   ods_list: OdsModel[] = [];
   constructor() { }
   public getAllODS():OdsModel[]{
-    return [{nome: 'ods1', icone: 'icone2', numero: 0, projetos: []}];
+    return [{nome: 'ods1', icone: 'icone2', projetos: []}];
   }
 }

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { DOCUMENT } from '@angular/common'
+import { DOCUMENT } from '@angular/common';
+import { GetOdsService } from '../services/get-ods.service';
 
 @Component({
   selector: 'app-ods-cards-horizontal',

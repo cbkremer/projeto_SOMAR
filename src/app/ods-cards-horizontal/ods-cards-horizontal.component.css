@@ -45,12 +45,17 @@
   margin-top: 5px;
   float: left;
   color: rgb(255, 255, 255);
+  padding-right:3px;
 }
 .ods_nome{
-  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-size: 10px;
+  word-wrap: break-word;
   padding-top: 10px;
   font-family: verdana;
   color:rgb(255, 255, 255);
+  max-height: 15px;
 }
 .ods_icone{
   margin-top: 25px;
