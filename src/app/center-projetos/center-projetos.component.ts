@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Projeto } from '../model/projeto.model';
+import { OdsModel } from '../model/ods.model';
 
 @Component({
   selector: 'app-center-projetos',
@@ -8,8 +9,8 @@ import { Projeto } from '../model/projeto.model';
 })
 export class CenterProjetosComponent implements OnInit {
 
-  projetos: Projeto[] = [{nome: 'projeto1', instituicao: 'instituição1'},
-                         {nome: 'projeto2', instituicao: 'instituição2'}];
+  projetos: Projeto[] = [{nome: 'projeto1', instituicao: 'instituição1', ods: []},
+                         {nome: 'projeto2', instituicao: 'instituição2', ods: []}];
 
   constructor() { 
 

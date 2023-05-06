@@ -1,14 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { DOCUMENT } from '@angular/common'
 
 @Component({
   selector: 'app-ods-cards-horizontal',
   templateUrl: './ods-cards-horizontal.component.html',
-  styleUrls: ['./ods-cards-horizontal.component.css']
+  styleUrls: ['./ods-cards-horizontal.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class OdsCardsHorizontalComponent implements OnInit {
   @Input() asd: number = 15;
-
+  icone: string = '<i class="bi bi-bicycle"></i>';
   low:number = 3;
   mid:number = 7;
   ods_list: any;

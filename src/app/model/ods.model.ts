@@ -1,5 +1,7 @@
+import { Projeto } from "./projeto.model";
+
 export interface OdsModel{
   nome: string;
-  numero: number;
   icone: string;
+  projetos: Projeto[];
 }

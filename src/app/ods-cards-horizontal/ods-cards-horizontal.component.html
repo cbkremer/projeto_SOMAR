@@ -8,9 +8,7 @@
         <div class="ods_nome">
           {{ods}}
         </div>
-        <div class="ods_icone">
-          <i class="bi bi-bank"></i>
-      </div>
+          <div class="ods_icone" [innerHTML]="icone"></div>
     </div>
     <div id="the_ods_card_yellow" *ngIf="getOdsNumber(i) >= low && getOdsNumber(i) < mid">
       <div class="ods_numero">
