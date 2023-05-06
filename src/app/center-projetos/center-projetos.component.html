@@ -1,11 +1,23 @@
 <section class="center_main_section">
-    <p>center-projetos works!</p>
-    <hr>
+    <p class="left_paragraph">
+        Nossos projetos:
+    </p>
+    <div *ngFor="let projeto of projetos; let i = index">
+        <div class="center_left">
+            <h1>
+                {{projeto.nome}}
+            </h1>
+            <h4>
+                {{projeto.instituicao}}
+            </h4>
+            <hr>
+        </div>
+    </div>
     <p class="left_paragraph">
         Buscar por ODS:
     </p>
     <div class="ods_cards">
-        <app-ods-cards-horizontal [asd]=4></app-ods-cards-horizontal>
+        <app-ods-cards-horizontal [asd]=12></app-ods-cards-horizontal>
     </div>
 </section>
 

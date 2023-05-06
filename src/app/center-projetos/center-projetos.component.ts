@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Projeto } from '../model/projeto.model';
 
 @Component({
   selector: 'app-center-projetos',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CenterProjetosComponent implements OnInit {
 
-  constructor() { }
+  projetos: Projeto[] = [{nome: 'projeto1', instituicao: 'instituição1'},
+                         {nome: 'projeto2', instituicao: 'instituição2'}];
+
+  constructor() { 
+
+  }
 
   ngOnInit(): void {
   }

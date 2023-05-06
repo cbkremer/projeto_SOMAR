@@ -7,7 +7,7 @@ import { DOCUMENT } from '@angular/common'
   styleUrls: ['./ods-cards-horizontal.component.css']
 })
 export class OdsCardsHorizontalComponent implements OnInit {
-  @Input() asd: number = 10;
+  @Input() asd: number = 15;
 
   low:number = 3;
   mid:number = 7;

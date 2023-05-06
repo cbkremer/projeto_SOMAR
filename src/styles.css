@@ -57,6 +57,25 @@ ul.topnav li a:hover{
   min-height: 100vh;
   /*unnecessary but does not hurt*/
 }
+.center_left{
+  font-family: verdana;
+  color: black;
+  text-align: left;
+  margin-left: 17.5%;
+}
+.center_left hr{
+  width: 200px;
+  margin-left:0;
+}
+.center_left h1,h4{
+  cursor: pointer;
+  transition: 200ms;
+  width: max-content;  /*eita*/
+
+}
+.center_left h1:hover,h4:hover{
+  color:black;
+}
 .centered_paragraph{
   font-family: verdana;
   color: rgb(77, 77, 77);
