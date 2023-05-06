@@ -9,6 +9,7 @@ import { CenterMainComponent } from './center-main/center-main.component';
 import { FooterComponent } from './footer/footer.component';
 import { OdsCardsHorizontalComponent } from './ods-cards-horizontal/ods-cards-horizontal.component';
 import { CenterLoginComponent } from './center-login/center-login.component';
+import { CenterProjetosComponent } from './center-projetos/center-projetos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CenterLoginComponent } from './center-login/center-login.component';
     CenterMainComponent,
     FooterComponent,
     OdsCardsHorizontalComponent,
-    CenterLoginComponent
+    CenterLoginComponent,
+    CenterProjetosComponent
   ],
   imports: [
     BrowserModule,

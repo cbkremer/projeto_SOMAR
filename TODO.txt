@@ -1,0 +1,12 @@
+pagina da ods
+    pagina conheça nossos projetos
+    ods mostra projetos
+    projeto mostra ods
+    - Página por projeto contendo:
+    - Nome do Projeto
+    - Cidade de realização
+    - Causa de atuação
+    - Objetivo do Projeto
+    - Parceiros
+    - ODSs vinculados
+finalizar os icones kkkkkkkkkkkk

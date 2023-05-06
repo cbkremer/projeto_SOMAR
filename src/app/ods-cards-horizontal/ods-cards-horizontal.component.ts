@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common'
 
 @Component({
@@ -7,15 +7,19 @@ import { DOCUMENT } from '@angular/common'
   styleUrls: ['./ods-cards-horizontal.component.css']
 })
 export class OdsCardsHorizontalComponent implements OnInit {
+  @Input() asd: number = 10;
 
   low:number = 3;
   mid:number = 7;
+  ods_list: any;
 
-  ods_list: any = [1,2,3,4,5,6,7,8,9,10];
-
-  constructor() { }
-
+  
+  constructor() {
+  }
+  
   ngOnInit(): void {
+    console.log(this.asd);
+    this.ods_list = [...Array(this.asd).keys()];
   }
   setOdsColor(index: number): string{
     if(this.ods_list[index] == '6'){

@@ -18,4 +18,7 @@ export class TopBarComponent implements OnInit {
   goToHome(){
     this.router.navigate(['center-main']);
   }
+  goToProjetos(){
+    this.router.navigate(['center-projetos']);
+  }
 }

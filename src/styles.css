@@ -63,6 +63,13 @@ ul.topnav li a:hover{
   max-width: 80%;
   margin: auto;
 }
+.left_paragraph{
+  font-family: verdana;
+  color: rgb(77, 77, 77);
+  max-width: 80%;
+  text-align: left;
+  margin-left: 17.5%;
+}
 img{
   width: 100%;
   max-width: fit-content;
