@@ -1,12 +1,12 @@
 <section class="center_main_section">
-    <p class="left_paragraph">
-        Nossos projetos:
-    </p>
+    <h1 class="left_paragraph">
+        Conheça nossos projetos:
+    </h1>
     <div *ngFor="let projeto of projetos; let i = index">
         <div class="center_left">
-            <h1>
+            <h2 (click)="goToProjeto()">
                 {{projeto.nome}}
-            </h1>
+            </h2>
             <h4>
                 {{projeto.instituicao}}
             </h4>

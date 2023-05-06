@@ -10,6 +10,7 @@ export class GetProjetosService {
 
   constructor(private ods_service: GetOdsService) { }
   public getAllProjetos(): Projeto[]{
-    return [{nome: 'projeto1', instituicao: 'instituicao1', ods: this.ods_service.getAllODS()}];
+    return [{nome: 'PIDS Tech', instituicao: 'Senac Tech', ods: []},
+            {nome: 'Espelho Inteligente', instituicao: 'Senac Tech', ods: []}];
   }
 }
