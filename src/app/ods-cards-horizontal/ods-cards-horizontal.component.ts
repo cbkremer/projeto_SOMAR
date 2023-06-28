@@ -10,11 +10,14 @@ import { OdsModel } from '../model/ods.model';
   encapsulation: ViewEncapsulation.None
 })
 export class OdsCardsHorizontalComponent implements OnInit {
+  //que diabo é isso?
   @Input() asd: number = 15;
   icone: string = '<i class="bi bi-bicycle"></i>';
   low:number = 3;
   mid:number = 7;
   ods_list: OdsModel[] = [];
+  //the chosen ods
+  public i: number = 0;
 
   
   constructor(private ods_service: GetOdsService) {
@@ -27,5 +30,10 @@ export class OdsCardsHorizontalComponent implements OnInit {
   }
   getOdsNumber(index: number): number{
     return this.ods_list[index].numero;
+  }
+  public setODSChoice(i: number){
+    console.log(i+1);
+    this.i = i+1;
+    this.ods_service.setChosenODS(i+1);
   }
 }
