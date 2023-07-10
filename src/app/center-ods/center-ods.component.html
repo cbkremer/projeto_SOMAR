@@ -1,0 +1,25 @@
+<section class="center_main_section">
+    <h1 class="centered_paragraph">
+        Nossas ODS:
+        {{mostrarODS()}}
+    </h1>
+    <br>
+    <div class="ods_cards">
+        <app-ods-cards-horizontal></app-ods-cards-horizontal>
+    </div>
+    <br>
+    <div *ngIf="mostrarODS() == -1">
+        <p class="bold">
+            Selecione uma ODS para mostrar mais informações...
+        </p>
+    </div>
+    <div *ngIf="mostrarODS() != -1">
+        <p class="bold">
+            asdasdasdasdasddasdasdasdasdasdasdasdasdasd
+        </p>
+        <h1>
+            {{ods.nome}}
+        </h1>
+    </div>
+    <app-footer></app-footer>
+</section>

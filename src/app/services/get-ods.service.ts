@@ -39,7 +39,7 @@ export class GetOdsService {
   public setChosenODS(i:number){
     this.chosen_ods = i;
   }
-  public getChoseODS():number{
+  public getChosenODS():number{
     return this.chosen_ods;
   }
 }

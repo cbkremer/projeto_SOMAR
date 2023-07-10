@@ -54,7 +54,7 @@ ul.topnav li a:hover{
   width: 100%;
   text-align: center;
   padding-top: 80px;
-  min-height: 100vh;
+  min-height: 90vh;
   /*unnecessary but does not hurt*/
 }
 .center_left{

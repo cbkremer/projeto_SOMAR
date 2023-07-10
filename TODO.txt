@@ -1,6 +1,8 @@
+concertar a porra do footer pelo amor de deus
 pagina da ods
-    pagina conheça nossos projetos
-    ods mostra projetos
-    projeto mostra ods
-    - Página por projeto contendo:
-    - Parceiros??
+    estatisticas
+    media de desenvolvimento entre os projetos
+    mostrar a cor direito baseada na media de desenvolvimento
+pagina do projeto   
+    carrosel de imagens
+    upload de imagens

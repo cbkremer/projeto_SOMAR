@@ -28,7 +28,7 @@ export class CenterProjetosComponent implements OnInit {
     console.log("ok rodou tico bunda");
     
     for (let i = 0; i < project.ods.length; i++) {
-      this.id_ods_selecionada = this.ods_service.getChoseODS();
+      this.id_ods_selecionada = this.ods_service.getChosenODS();
       if(this.id_ods_selecionada == 0){
         return true;
       }

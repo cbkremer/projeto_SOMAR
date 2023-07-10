@@ -11,6 +11,7 @@ import { OdsCardsHorizontalComponent } from './ods-cards-horizontal/ods-cards-ho
 import { CenterLoginComponent } from './center-login/center-login.component';
 import { CenterProjetosComponent } from './center-projetos/center-projetos.component';
 import { CenterProjetoComponent } from './center-projeto/center-projeto.component';
+import { CenterOdsComponent } from './center-ods/center-ods.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CenterProjetoComponent } from './center-projeto/center-projeto.componen
     OdsCardsHorizontalComponent,
     CenterLoginComponent,
     CenterProjetosComponent,
-    CenterProjetoComponent
+    CenterProjetoComponent,
+    CenterOdsComponent
   ],
   imports: [
     BrowserModule,
