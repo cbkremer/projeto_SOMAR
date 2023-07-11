@@ -11,10 +11,13 @@ export class CenterOdsComponent implements OnInit {
 
   private chosen_ods: number = -1;
   public ods: OdsModel;
-
+  public low:number;
+  public mid:number;
   constructor(private ods_service: GetOdsService) {
     this.ods = {id: 1, nome:"", icone:"", numero:0, projetos: []};
-   }
+    this.low = ods_service.low;
+    this.mid = ods_service.mid;
+  }
 
   ngOnInit(): void {
     this.ods_service.chosen_ods = -1;

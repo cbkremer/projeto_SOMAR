@@ -7,7 +7,7 @@ import { GetOdsService } from './get-ods.service';
   providedIn: 'root'
 })
 export class GetProjetosService {
-
+  //colocar só a id dentro do model ao inves da lista
   constructor(private ods_service: GetOdsService) { }
   public getAllProjetos(): Projeto[]{
     return [{nome: 'PIDS Tech', instituicao: 'Senac Tech', ods: [

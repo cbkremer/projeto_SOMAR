@@ -3,7 +3,7 @@
   <div *ngFor="let ods of ods_list; let i = index">
     <div id="the_ods_card_red" *ngIf="getOdsNumber(i) < low" (click)="setODSChoice(i)">
         <div class="ods_numero">
-          {{i+1}}
+          {{ods.numero}}
         </div>
         <div class="ods_nome">
           {{ods.nome}}
@@ -12,7 +12,7 @@
     </div>
     <div id="the_ods_card_yellow" *ngIf="getOdsNumber(i) >= low && getOdsNumber(i) < mid" (click)="setODSChoice(i)">
       <div class="ods_numero">
-        {{i+1}}
+        {{ods.numero}}
       </div>
       <div class="ods_nome">
         {{ods.nome}}
@@ -21,7 +21,7 @@
     </div>
     <div id="the_ods_card_green" *ngIf="getOdsNumber(i) >= 7" (click)="setODSChoice(i)">
       <div class="ods_numero">
-        {{i+1}}
+        {{ods.numero}}
       </div>
       <div class="ods_nome">
         {{ods.nome}}

@@ -13,14 +13,16 @@ export class OdsCardsHorizontalComponent implements OnInit {
   //que diabo é isso?
   @Input() asd: number = 15;
   icone: string = '<i class="bi bi-bicycle"></i>';
-  low:number = 3;
-  mid:number = 7;
+  low:number;
+  mid:number;
   ods_list: OdsModel[] = [];
   //the chosen ods
   public i: number = 0;
 
   
   constructor(private ods_service: GetOdsService) {
+    this.low = ods_service.low;
+    this.mid = ods_service.mid;
   }
   
   ngOnInit(): void {

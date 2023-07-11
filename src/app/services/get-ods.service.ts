@@ -7,6 +7,8 @@ import { OdsModel } from '../model/ods.model';
 export class GetOdsService {
   ods_list: OdsModel[] = [];
   public chosen_ods:number = 0;
+  public low:number = 3;
+  public mid:number = 7;
   constructor() { }
   public getAllODS():OdsModel[]{
     return [{id: 1, nome: 'Erradicação da pobreza', icone: '<i class="bi bi-people-fill"></i>',numero: 2, projetos: []},

@@ -1,7 +1,6 @@
 <section class="center_main_section">
     <h1 class="centered_paragraph">
         Nossas ODS:
-        {{mostrarODS()}}
     </h1>
     <br>
     <div class="ods_cards">
@@ -14,12 +13,51 @@
         </p>
     </div>
     <div *ngIf="mostrarODS() != -1">
-        <p class="bold">
-            asdasdasdasdasddasdasdasdasdasdasdasdasdasd
-        </p>
-        <h1>
-            {{ods.nome}}
-        </h1>
+        <div class="ods_info_div">
+            <hr>
+            <h1 class="left_most_paragraph">
+                {{ods.nome}}
+            </h1>
+            <div id="the_ods_card_red" *ngIf="ods.numero < low">
+                <div class="ods_numero">
+                  {{ods.numero}}
+                </div>
+                <div class="ods_nome">
+                  {{ods.nome}}
+                </div>
+                <div class="ods_icone" [innerHTML]="ods.icone"></div>
+            </div>
+            <div id="the_ods_card_yellow" *ngIf="ods.numero >= low && ods.numero < mid">
+                <div class="ods_numero">
+                  {{ods.numero}}
+                </div>
+                <div class="ods_nome">
+                  {{ods.nome}}
+                </div>
+                <div class="ods_icone" [innerHTML]="ods.icone"></div>
+            </div>
+            <div id="the_ods_card_green" *ngIf="ods.numero >= mid">
+                <div class="ods_numero">
+                  {{ods.numero}}
+                </div>
+                <div class="ods_nome">
+                  {{ods.nome}}
+                </div>
+                <div class="ods_icone" [innerHTML]="ods.icone"></div>
+            </div>
+            <p class="left_bold_paragraph">
+                Indice de desenvolvimento: <em>{{ods.numero}}</em>
+                <br>
+                Número de projetos aderentes: <em>2</em>
+                <br>
+                Número de instituições aderentes: <em>5</em>
+                <br>
+                <br>
+            </p>
+            <p class="left_most_paragraph">
+                descrição ]:^D)
+            </p>
+        </div>
     </div>
-    <app-footer></app-footer>
+    
 </section>

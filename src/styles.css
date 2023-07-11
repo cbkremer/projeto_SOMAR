@@ -89,6 +89,34 @@ ul.topnav li a:hover{
   text-align: left;
   margin-left: 17.5%;
 }
+.left_bold_paragraph{
+  font-family: verdana;
+  color: rgb(77, 77, 77);
+  max-width: 80%;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 17.5%;
+  font-weight: bold;
+}
+.left_bold_paragraph em{
+  color:black;
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 24px;
+}
+.left_most_paragraph{
+  font-family: verdana;
+  color: rgb(77, 77, 77);
+  max-width: 80%;
+  text-align: left;
+}
+.left_most_bold_paragraph{
+  font-weight: bold;
+  font-family: verdana;
+  color: rgb(77, 77, 77);
+  max-width: 80%;
+  text-align: left;
+}
 img{
   width: 100%;
   max-width: fit-content;
@@ -178,3 +206,4 @@ img{
   color: white;
   background-color: rgb(0, 89, 255);
 }
+/*--------------------------------------------------------------------------------pagina da ods*/
