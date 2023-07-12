@@ -2,6 +2,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { GetOdsService } from '../services/get-ods.service';
 import { OdsModel } from '../model/ods.model';
+import { Projeto } from '../model/projeto.model';
 
 @Component({
   selector: 'app-ods-cards-horizontal',
@@ -10,12 +11,12 @@ import { OdsModel } from '../model/ods.model';
   encapsulation: ViewEncapsulation.None
 })
 export class OdsCardsHorizontalComponent implements OnInit {
-  //que diabo é isso?
-  @Input() asd: number = 15;
+  //se é para mostrar uma lista das ods do projeto
+  @Input() project_ods: Projeto = {id: -1, nome: '', descricao: '', instituicao: '', ods: []};
   icone: string = '<i class="bi bi-bicycle"></i>';
   low:number;
   mid:number;
-  ods_list: OdsModel[] = [];
+  ods_list: any = [];
   //the chosen ods
   public i: number = 0;
 
@@ -26,8 +27,13 @@ export class OdsCardsHorizontalComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    console.log(this.asd);
-    this.ods_list = this.ods_service.getAllODS();
+    if(this.project_ods.id != -1){
+      console.log(this.project_ods.ods.length);
+      this.ods_list = this.project_ods.ods;
+    }
+    else{
+      this.ods_list = this.ods_service.getAllODS();
+    }
     console.log(this.ods_list);
   }
   getOdsNumber(index: number): number{

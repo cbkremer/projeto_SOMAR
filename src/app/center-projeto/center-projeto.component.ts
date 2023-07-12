@@ -12,12 +12,13 @@ export class CenterProjetoComponent implements OnInit {
   private id: number | null;
   public projeto: Projeto;
   constructor(
-    private act_route: ActivatedRoute,
-    private projeto_service: GetProjetosService
-    ) {
-    this.id = Number(this.act_route.snapshot.paramMap.get('id'));
-    this.projeto = projeto_service.getProjetoByID(this.id);
-  }
+      private act_route: ActivatedRoute,
+      private projeto_service: GetProjetosService
+    ) 
+    {
+      this.id = Number(this.act_route.snapshot.paramMap.get('id'));
+      this.projeto = projeto_service.getProjetoByID(this.id);
+    }
 
   ngOnInit(): void {
 

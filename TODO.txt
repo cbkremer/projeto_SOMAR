@@ -5,6 +5,8 @@ pagina da ods
     mostrar a cor direito baseada na media de desenvolvimento
 pagina do projeto   
     mostrar as ods direito
+        ta mais ou menos direito, tem  funcao de clicar e setar a ods escolhida que eu consertei
+        fazendo sempre voltar pra 0 quando vai pra pagina dos projetos mas slakkkkk
     carrosel de imagens
     upload de imagens
 pagina da instituicao
