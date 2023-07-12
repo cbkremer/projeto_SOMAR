@@ -13,6 +13,8 @@ import { Projeto } from '../model/projeto.model';
 export class OdsCardsHorizontalComponent implements OnInit {
   //se é para mostrar uma lista das ods do projeto
   @Input() project_ods: Projeto = {id: -1, nome: '', descricao: '', instituicao: '', ods: []};
+  //se é para as ods serem selecionaveis ou nao
+  @Input() selectable: boolean = true;
   icone: string = '<i class="bi bi-bicycle"></i>';
   low:number;
   mid:number;
@@ -40,8 +42,11 @@ export class OdsCardsHorizontalComponent implements OnInit {
     return this.ods_list[index].numero;
   }
   public setODSChoice(i: number){
-    console.log(i+1);
-    this.i = i+1;
-    this.ods_service.setChosenODS(i+1);
+    //fazer isso receber a id ir para a pagina pela id 
+    if(this.selectable){
+      console.log("selecionou uma ods");
+      this.i = i+1;
+      this.ods_service.setChosenODS(i+1);
+    }
   }
 }

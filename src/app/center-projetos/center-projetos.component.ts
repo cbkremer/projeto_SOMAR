@@ -26,8 +26,6 @@ export class CenterProjetosComponent implements OnInit {
 
   }
   public possuiODS(project:Projeto):Boolean{
-    console.log("ok rodou tico bunda");
-    
     for (let i = 0; i < project.ods.length; i++) {
       this.id_ods_selecionada = this.ods_service.getChosenODS();
       if(this.id_ods_selecionada == 0){
