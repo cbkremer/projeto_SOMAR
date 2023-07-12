@@ -4,5 +4,7 @@ pagina da ods
     media de desenvolvimento entre os projetos
     mostrar a cor direito baseada na media de desenvolvimento
 pagina do projeto   
+    mostrar as ods direito
     carrosel de imagens
     upload de imagens
+pagina da instituicao

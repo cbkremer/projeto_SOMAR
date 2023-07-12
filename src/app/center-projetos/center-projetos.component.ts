@@ -21,8 +21,9 @@ export class CenterProjetosComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  public goToProjeto(){
-    this.router.navigate(['center-projeto']);
+  public goToProjeto(projeto: Projeto){
+    this.router.navigate(['center-projeto/'+projeto.id]);
+
   }
   public possuiODS(project:Projeto):Boolean{
     console.log("ok rodou tico bunda");

@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'center-main', component: CenterMainComponent},
   {path: 'center-login', component: CenterLoginComponent},
   {path: 'center-projetos', component: CenterProjetosComponent},
-  {path: 'center-projeto', component: CenterProjetoComponent},
+  {path: 'center-projeto/:id', component: CenterProjetoComponent},
   {path: 'center-ods', component: CenterOdsComponent}
 ];
 
