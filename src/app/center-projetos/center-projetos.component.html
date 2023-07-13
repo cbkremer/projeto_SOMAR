@@ -8,9 +8,11 @@
                 <h2 (click)="goToProjeto(projeto)">
                     {{projeto.nome}}
                 </h2>
-                <h4>
-                    {{projeto.instituicao}}
-                </h4>
+                <div *ngFor="let insti of projeto.instituicoes">
+                    <h4 (click)="goToProjeto(projeto)">
+                        {{insti.nome}}
+                    </h4>
+                </div>
                 <hr>
             </div>
         </div>

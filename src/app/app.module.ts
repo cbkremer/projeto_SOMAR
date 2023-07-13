@@ -12,6 +12,7 @@ import { CenterLoginComponent } from './center-login/center-login.component';
 import { CenterProjetosComponent } from './center-projetos/center-projetos.component';
 import { CenterProjetoComponent } from './center-projeto/center-projeto.component';
 import { CenterOdsComponent } from './center-ods/center-ods.component';
+import { CenterInstituicaoComponent } from './center-instituicao/center-instituicao.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CenterOdsComponent } from './center-ods/center-ods.component';
     CenterLoginComponent,
     CenterProjetosComponent,
     CenterProjetoComponent,
-    CenterOdsComponent
+    CenterOdsComponent,
+    CenterInstituicaoComponent
   ],
   imports: [
     BrowserModule,

@@ -26,4 +26,7 @@ export class TopBarComponent implements OnInit {
   goToODS(){
     this.router.navigate(['center-ods']);
   }
+  gotToInstituicoes(){
+    this.router.navigate(['center-instituicoes']);
+  }
 }
