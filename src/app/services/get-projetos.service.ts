@@ -32,4 +32,16 @@ export class GetProjetosService {
     }
     return projetos[0];
   }
+  public getProjetoByODS(id: number): Projeto[]{
+    let projects = this.getAllProjetos();
+    let ods_projects = [];
+    for (let i = 0;i< projects.length;i++){
+      for (let j = 0;j< projects[i].ods.length;j++){
+        if(projects[i].ods[j].id == id){
+          ods_projects.push(projects[i]);
+        }
+      }
+    }
+    return ods_projects;
+  }
 }
