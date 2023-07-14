@@ -9,7 +9,7 @@
                     {{projeto.nome}}
                 </h2>
                 <div *ngFor="let insti of projeto.instituicoes">
-                    <h4 (click)="goToProjeto(projeto)">
+                    <h4 (click)="goToInstituicao(insti)" style="cursor:pointer;">
                         {{insti.nome}}
                     </h4>
                 </div>

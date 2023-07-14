@@ -2,7 +2,6 @@ concertar a porra do footer pelo amor de deus
 pagina da ods
     estatisticas
     media de desenvolvimento entre os projetos
-    mostrar a cor direito baseada na media de desenvolvimento
 pagina do projeto   
     mostrar as ods direito
         ta mais ou menos direito, tem  funcao de clicar e setar a ods escolhida que eu consertei

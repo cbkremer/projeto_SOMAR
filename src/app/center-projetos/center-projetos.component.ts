@@ -4,6 +4,7 @@ import { OdsModel } from '../model/ods.model';
 import { GetProjetosService } from '../services/get-projetos.service';
 import { GetOdsService } from '../services/get-ods.service';
 import { Router } from '@angular/router';
+import { InstituicaoModel } from '../model/instituicao.model';
 
 @Component({
   selector: 'app-center-projetos',
@@ -23,7 +24,9 @@ export class CenterProjetosComponent implements OnInit {
   }
   public goToProjeto(projeto: Projeto){
     this.router.navigate(['center-projeto/'+projeto.id]);
-
+  }
+  public goToInstituicao(instituicao: InstituicaoModel){
+    this.router.navigate(['center-instituicao/'+instituicao.id]);
   }
   public possuiODS(project:Projeto):Boolean{
     for (let i = 0; i < project.ods.length; i++) {

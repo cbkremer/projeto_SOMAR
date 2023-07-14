@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { InstituicaoModel } from '../model/instituicao.model';
+import { GetInstituicaoService } from '../services/get-instituicao.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-center-instituicao',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CenterInstituicaoComponent implements OnInit {
 
-  constructor() { }
+  public instituicao: InstituicaoModel;
+  constructor(
+    private insti_service: GetInstituicaoService,
+    private act_route: ActivatedRoute
+  ) {
+    this.instituicao = insti_service.getInstituicaoById(Number(this.act_route.snapshot.paramMap.get('id')));
+  }
 
   ngOnInit(): void {
+
   }
 
 }

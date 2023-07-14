@@ -18,7 +18,7 @@ export class GetProjetosService {
               {id: 3, nome: 'Saúde e bem estar', icone: '<i class="bi bi-heart-pulse-fill"></i>',numero: 7, projetos: []}
             ],
             instituicoes:[{id: 1, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: []},
-                          {id: 2, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: []}]
+                          {id: 2, nome: "Senac Tech 2", endereco: "Av. Venâncio Aires", projetos: []}]
             },
             {id: 2, nome: 'Espelho Inteligente', descricao: "", ods: [
               {id: 7, nome: 'Energia limpa e acessível', icone: '<i class="bi bi-sun-fill"></i>',numero: 1, projetos: []},

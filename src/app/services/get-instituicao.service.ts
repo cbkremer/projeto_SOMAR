@@ -8,7 +8,8 @@ export class GetInstituicaoService {
 
   constructor() { }
   public getAllInstituicoes(): InstituicaoModel[]{
-    return [{id: 1, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: []}];
+    return [{id: 1, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: []},
+            {id: 2, nome: "Senac Tech 2", endereco: "Av. Venâncio Aires", projetos: []}];
   }
   public getInstituicaoById(id: number): InstituicaoModel{
     let instituicoes = this.getAllInstituicoes();

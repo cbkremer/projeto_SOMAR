@@ -5,6 +5,7 @@ import { CenterLoginComponent } from './center-login/center-login.component';
 import { CenterProjetosComponent } from './center-projetos/center-projetos.component';
 import { CenterProjetoComponent } from './center-projeto/center-projeto.component';
 import { CenterOdsComponent } from './center-ods/center-ods.component';
+import { CenterInstituicaoComponent } from './center-instituicao/center-instituicao.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'center-main', pathMatch: 'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'center-login', component: CenterLoginComponent},
   {path: 'center-projetos', component: CenterProjetosComponent},
   {path: 'center-projeto/:id', component: CenterProjetoComponent},
-  {path: 'center-ods', component: CenterOdsComponent}
+  {path: 'center-ods', component: CenterOdsComponent},
+  {path: 'center-instituicao/:id', component: CenterInstituicaoComponent}
 ];
 
 @NgModule({
