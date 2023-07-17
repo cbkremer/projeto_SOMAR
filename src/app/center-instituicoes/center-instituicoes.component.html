@@ -1,0 +1,20 @@
+<section class="center_main_section">
+    <h1 class="left_paragraph">
+        Conheça nossas instituições:
+    </h1>
+    <div *ngFor="let insti of instituicoes; let i = index">
+        <div>
+            <div class="center_left">
+                <h2>
+                    {{insti.nome}}
+                </h2>
+                <div *ngFor="let proj of insti.projetos">
+                    <h4>
+                        {{proj.nome}}
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</section>
