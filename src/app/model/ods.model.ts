@@ -5,5 +5,6 @@ export interface OdsModel{
   nome: string;
   icone: string;
   numero: number;
+  descricao: string;
   projetos: Projeto[];
 }

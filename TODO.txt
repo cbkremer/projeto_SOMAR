@@ -1,4 +1,4 @@
-concertar a porra do footer pelo amor de deus
+consertar a porra do footer pelo amor de deus - ja fazem 7 dias?
 pagina da ods
     estatisticas
     media de desenvolvimento entre os projetos
@@ -8,4 +8,5 @@ pagina do projeto
         fazendo sempre voltar pra 0 quando vai pra pagina dos projetos mas slakkkkk
     carrosel de imagens
     upload de imagens
+pagina de todas as instituições
 pagina da instituicao

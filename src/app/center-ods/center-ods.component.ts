@@ -20,7 +20,7 @@ export class CenterOdsComponent implements OnInit {
     private ods_service: GetOdsService,
     private projeto_service: GetProjetosService
   ) {
-    this.ods = {id: 1, nome:"", icone:"", numero:0, projetos: []};
+    this.ods = {id: 1, nome:"", icone:"", numero:0,descricao:"", projetos: []};
     this.low = ods_service.low;
     this.mid = ods_service.mid;
   }
