@@ -34,7 +34,9 @@ export class OdsCardsHorizontalComponent implements OnInit {
       this.ods_list = this.project_ods.ods;
     }
     else{
-      this.ods_list = this.ods_service.getAllODS();
+      this.ods_service.getAllODS().subscribe((list:OdsModel[]) => {
+        this.ods_list = list;
+      });
     }
     console.log(this.ods_list);
   }

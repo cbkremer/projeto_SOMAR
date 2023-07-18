@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Projeto } from '../model/projeto.model';
 import { GetOdsService } from './get-ods.service';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -8,8 +10,8 @@ import { GetOdsService } from './get-ods.service';
 })
 export class GetProjetosService {
   //colocar só a id dentro do model ao inves da lista
-  constructor(private ods_service: GetOdsService) { }
-  public getAllProjetos(): Projeto[]{
+  constructor(private ods_service: GetOdsService, private http:HttpClient) { }
+  public getAllProjetos2(): Projeto[]{
     return [{id: 1, nome: 'PIDS Tech',
             descricao: "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.", 
             ods: [
@@ -28,17 +30,14 @@ export class GetProjetosService {
             instituicoes:[{id: 1, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: []}]
             }];
   }
-  public getProjetoByID(id: number): Projeto{
-    let projetos = this.getAllProjetos();
-    for (let i = 0; i < projetos.length; i++) {
-      if(projetos[i].id == id){
-        return projetos[i];
-      }
-    }
-    return projetos[0];
+  public getProjetoByID(id: number): Observable<Projeto>{
+    return this.http.get<Projeto>('http://localhost:3000/projeto/'+id);
   }
   public getProjetoByODS(id: number): Projeto[]{
-    let projects = this.getAllProjetos();
+    let projects:Projeto[] = [];
+    this.getAllProjetos().subscribe((projetos:Projeto[]) => {
+      projects = projetos;
+    });
     let ods_projects = [];
     for (let i = 0;i< projects.length;i++){
       for (let j = 0;j< projects[i].ods.length;j++){
@@ -48,5 +47,8 @@ export class GetProjetosService {
       }
     }
     return ods_projects;
+  }
+  public getAllProjetos(): Observable<Projeto[]>{
+    return this.http.get<Projeto[]>('http://localhost:3000/projeto');
   }
 }

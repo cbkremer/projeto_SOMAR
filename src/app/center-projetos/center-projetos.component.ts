@@ -17,7 +17,10 @@ export class CenterProjetosComponent implements OnInit {
   id_ods_selecionada: number = 0;
 
   constructor(private router: Router,private projeto_service: GetProjetosService,private ods_service: GetOdsService) { 
-    this.projetos = projeto_service.getAllProjetos();
+    //this.projetos = 
+    this.projeto_service.getAllProjetos().subscribe((projetos:Projeto[]) => {
+      this.projetos = projetos;
+    });
   }
 
   ngOnInit(): void {

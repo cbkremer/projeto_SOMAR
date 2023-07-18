@@ -24,15 +24,16 @@ export class CenterOdsComponent implements OnInit {
     this.low = ods_service.low;
     this.mid = ods_service.mid;
   }
-
   ngOnInit(): void {
     this.ods_service.chosen_ods = -1;
   }
   mostrarODS(){
     this.chosen_ods = this.ods_service.getChosenODS();
-    this.projetos = this.projeto_service.getProjetoByODS(this.chosen_ods);
-    if(this.chosen_ods != -1){
-      this.ods = this.ods_service.getOdsByID(this.chosen_ods);
+    if(this.chosen_ods != -1 && this.ods.id != this.chosen_ods){
+      this.projetos = this.projeto_service.getProjetoByODS(this.chosen_ods);
+      this.ods_service.getOdsByID(this.chosen_ods).subscribe((ods:OdsModel) => {
+        this.ods = ods;
+    });
     }
     return this.chosen_ods;
   }

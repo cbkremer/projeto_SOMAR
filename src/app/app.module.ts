@@ -1,7 +1,7 @@
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -14,6 +14,7 @@ import { CenterProjetoComponent } from './center-projeto/center-projeto.componen
 import { CenterOdsComponent } from './center-ods/center-ods.component';
 import { CenterInstituicaoComponent } from './center-instituicao/center-instituicao.component';
 import { CenterInstituicoesComponent } from './center-instituicoes/center-instituicoes.component';
+import { GetProjetosService } from './services/get-projetos.service';
 
 @NgModule({
   declarations: [
@@ -32,9 +33,10 @@ import { CenterInstituicoesComponent } from './center-instituicoes/center-instit
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GetProjetosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

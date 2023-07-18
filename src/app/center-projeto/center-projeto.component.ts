@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class CenterProjetoComponent implements OnInit {
   private id: number | null;
-  public projeto: Projeto;
+  public projeto: any;
   constructor(
       private act_route: ActivatedRoute,
       private projeto_service: GetProjetosService,
@@ -20,7 +20,11 @@ export class CenterProjetoComponent implements OnInit {
     ) 
     {
       this.id = Number(this.act_route.snapshot.paramMap.get('id'));
-      this.projeto = projeto_service.getProjetoByID(this.id);
+
+      //this.projeto = 
+      this.projeto_service.getProjetoByID(this.id).subscribe((projeto:Projeto) => {
+        this.projeto = projeto;
+      });
     }
 
   ngOnInit(): void {
