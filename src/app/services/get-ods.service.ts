@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 export class GetOdsService {
   ods_list: OdsModel[] = [];
   public chosen_ods:number = 0;
+  public ods_clicked = false;
   public low:number = 3;
   public mid:number = 7;
   constructor(private http:HttpClient) { }
@@ -35,10 +36,12 @@ export class GetOdsService {
   public getOdsByID(id:number):Observable<OdsModel>{
     return this.http.get<OdsModel>('http://localhost:3000/ods/'+id);
   }
-  public setChosenODS(i:number){
-    this.chosen_ods = i;
+  public setChosenODS(id:number){
+    this.ods_clicked = true;
+    this.chosen_ods = id;
   }
   public getChosenODS():number{
+    this.ods_clicked = false;
     return this.chosen_ods;
   }
   public getHttpODS(id:number):Observable<OdsModel>{

@@ -41,6 +41,7 @@ export class GetProjetosService {
     let ods_projects = [];
     for (let i = 0;i< projects.length;i++){
       for (let j = 0;j< projects[i].ods.length;j++){
+        console.log(projects[i].nome);
         if(projects[i].ods[j].id == id){
           ods_projects.push(projects[i]);
         }

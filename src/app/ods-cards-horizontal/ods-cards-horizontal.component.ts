@@ -43,12 +43,11 @@ export class OdsCardsHorizontalComponent implements OnInit {
   getOdsNumber(index: number): number{
     return this.ods_list[index].numero;
   }
-  public setODSChoice(i: number){
+  public setODSChoice(id: number){
     //fazer isso receber a id ir para a pagina pela id 
     if(this.selectable){
-      console.log("selecionou uma ods");
-      this.i = i+1;
-      this.ods_service.setChosenODS(i+1);
+      console.log("selecionou a ods: "+id);
+      this.ods_service.setChosenODS(id);
     }
   }
 }

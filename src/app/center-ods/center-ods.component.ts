@@ -10,8 +10,8 @@ import { Projeto } from '../model/projeto.model';
   styleUrls: ['./center-ods.component.css']
 })
 export class CenterOdsComponent implements OnInit {
-
   private chosen_ods: number = -1;
+  public ods_counter = 0;
   public ods: OdsModel;
   public projetos: Projeto[] = [];
   public low:number;
@@ -28,12 +28,16 @@ export class CenterOdsComponent implements OnInit {
     this.ods_service.chosen_ods = -1;
   }
   mostrarODS(){
-    this.chosen_ods = this.ods_service.getChosenODS();
-    if(this.chosen_ods != -1 && this.ods.id != this.chosen_ods){
-      this.projetos = this.projeto_service.getProjetoByODS(this.chosen_ods);
+    if(this.ods_service.ods_clicked){
+      this.chosen_ods = this.ods_service.getChosenODS();
+      console.log("chosen ods: "+this.chosen_ods+" | "+this.ods.id);
+      //this.projetos = this.projeto_service.getProjetoByODS(this.chosen_ods);
+      this.projeto_service.getAllProjetos().subscribe((projetos:Projeto[]) => {
+        this.projetos = projetos;
+      });
       this.ods_service.getOdsByID(this.chosen_ods).subscribe((ods:OdsModel) => {
         this.ods = ods;
-    });
+      });
     }
     return this.chosen_ods;
   }
