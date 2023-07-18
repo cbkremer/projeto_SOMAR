@@ -32,11 +32,9 @@ export class CenterOdsComponent implements OnInit {
       this.chosen_ods = this.ods_service.getChosenODS();
       console.log("chosen ods: "+this.chosen_ods+" | "+this.ods.id);
       //this.projetos = this.projeto_service.getProjetoByODS(this.chosen_ods);
-      this.projeto_service.getAllProjetos().subscribe((projetos:Projeto[]) => {
-        this.projetos = projetos;
-      });
       this.ods_service.getOdsByID(this.chosen_ods).subscribe((ods:OdsModel) => {
         this.ods = ods;
+        this.projetos = ods.projetos;
       });
     }
     return this.chosen_ods;
