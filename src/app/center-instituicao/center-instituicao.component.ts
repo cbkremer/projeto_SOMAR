@@ -10,14 +10,16 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class CenterInstituicaoComponent implements OnInit {
 
-  public instituicao: InstituicaoModel;
+  public instituicao: any;
   constructor(
     private insti_service: GetInstituicaoService,
     private act_route: ActivatedRoute
   ) {
-    this.instituicao = insti_service.getInstituicaoById(Number(this.act_route.snapshot.paramMap.get('id')));
+    //this.instituicao = 
+    this.insti_service.getInstituicaoById(Number(this.act_route.snapshot.paramMap.get('id'))).subscribe((insti:InstituicaoModel) =>{
+      this.instituicao = insti;
+    });
   }
-
   ngOnInit(): void {
 
   }

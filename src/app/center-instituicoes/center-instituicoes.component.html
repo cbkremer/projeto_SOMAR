@@ -5,16 +5,26 @@
     <div *ngFor="let insti of instituicoes; let i = index">
         <div>
             <div class="center_left">
-                <h2>
+                <h2 (click)="goToInstituicao(insti)">
                     {{insti.nome}}
                 </h2>
                 <div *ngFor="let proj of insti.projetos">
-                    <h4>
+                    <h4 (click)="goToProjeto(proj)">
                         {{proj.nome}}
                     </h4>
                 </div>
+                <hr>
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <app-footer></app-footer>
 </section>

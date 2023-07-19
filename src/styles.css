@@ -71,7 +71,6 @@ ul.topnav li a:hover{
   cursor: pointer;
   transition: 200ms;
   width: max-content;  /*eita*/
-
 }
 .center_left h2:hover,h4:hover{
   color:black;
@@ -207,3 +206,7 @@ img{
   background-color: rgb(0, 89, 255);
 }
 /*--------------------------------------------------------------------------------pagina da ods*/
+/*--------------------------------------------------------------------------------pagina da ods*/
+.img_class{
+  width: 500px;
+}

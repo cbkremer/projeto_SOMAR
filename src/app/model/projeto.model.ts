@@ -6,5 +6,6 @@ export interface Projeto{
     nome: string;
     descricao: string;
     ods: OdsModel[];
+    cidade: string;
     instituicoes: InstituicaoModel[];
 }

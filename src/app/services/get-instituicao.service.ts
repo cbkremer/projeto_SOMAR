@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
 import { InstituicaoModel } from '../model/instituicao.model';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GetInstituicaoService {
 
-  constructor() { }
-  public getAllInstituicoes(): InstituicaoModel[]{
+  constructor(private http:HttpClient) { }
+  /*public getAllInstituicoes3(): InstituicaoModel[]{
     return [{id: 1, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: [{id: 1, nome: 'PIDS Tech',
     descricao: "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.", 
     ods: [
@@ -34,14 +37,11 @@ export class GetInstituicaoService {
             instituicoes:[{id: 1, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: []},
                           {id: 2, nome: "Senac Tech 2", endereco: "Av. Venâncio Aires", projetos: []}]
             }]}];
+  }*/
+  public getInstituicaoById(id: number): Observable<InstituicaoModel>{
+    return this.http.get<InstituicaoModel>('http://localhost:3000/instituicoes/'+id);
   }
-  public getInstituicaoById(id: number): InstituicaoModel{
-    let instituicoes = this.getAllInstituicoes();
-    for (let i = 0;instituicoes.length;i++){
-      if(instituicoes[i].id == id){
-        return instituicoes[i];
-      }
-    }
-    return instituicoes[0];
+  public getAllInstituicoes():Observable<InstituicaoModel[]>{
+    return this.http.get<InstituicaoModel[]>('http://localhost:3000/instituicoes');
   }
 }

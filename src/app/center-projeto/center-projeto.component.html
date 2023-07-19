@@ -1,18 +1,21 @@
 <section class="center_main_section">
-    <h1>{{projeto.nome}}</h1>
+    <h1 style="color:black;">{{projeto.nome}} - {{projeto.cidade}}</h1>
+    <h2>Parceiros:</h2>
     <div *ngFor="let insti of projeto.instituicoes">
         <h3 (click)="goToInstituicao(insti)" style="cursor:pointer;">
             {{insti.nome}}
         </h3>
     </div>
-    <hr>
+    <picture>
+        <img class="img_class" src="../../assets/PIDS.png" width="5px" height="5px"/>
+        <img class="img_class" src="../../assets/PIDS.png" width="5px" height="5px"/>
+    </picture>
     <h2 class="centered_paragraph">O projeto:</h2>
     <br>
     <p class="centered_paragraph">
         {{projeto.descricao}}
     </p>
     <br>
-    <img src="../../assets/PIDS.png" width="5px" height="5px"/>
     <hr>
     <app-ods-cards-horizontal [project_ods]=projeto [selectable]="false"></app-ods-cards-horizontal>
     <app-footer></app-footer>

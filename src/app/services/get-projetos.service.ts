@@ -18,7 +18,7 @@ export class GetProjetosService {
               {id: 1, nome: 'Erradicação da pobreza', icone: '<i class="bi bi-people-fill"></i>',numero: 2,descricao:"", projetos: []},
               {id: 2, nome: 'Agricultura sustentável', icone: '<i class="bi bi-egg-fill"></i>',numero: 6,descricao:"", projetos: []},
               {id: 3, nome: 'Saúde e bem estar', icone: '<i class="bi bi-heart-pulse-fill"></i>',numero: 7,descricao:"", projetos: []}
-            ],
+            ],cidade:"",
             instituicoes:[{id: 1, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: []},
                           {id: 2, nome: "Senac Tech 2", endereco: "Av. Venâncio Aires", projetos: []}]
             },
@@ -26,7 +26,7 @@ export class GetProjetosService {
               {id: 7, nome: 'Energia limpa e acessível', icone: '<i class="bi bi-sun-fill"></i>',numero: 1,descricao:"", projetos: []},
               {id: 8, nome: 'Trabalho e econômia', icone: '<i class="bi bi-bar-chart-fill"></i>',numero: 9,descricao:"", projetos: []},
               {id: 9, nome: 'Industria, inovação e infra', icone: '<i class="bi bi-boxes"></i>',numero: 6,descricao:"", projetos: []}
-            ],
+            ],cidade:"",
             instituicoes:[{id: 1, nome: "Senac Tech", endereco: "Av. Venâncio Aires", projetos: []}]
             }];
   }
