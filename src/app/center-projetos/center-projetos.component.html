@@ -3,6 +3,12 @@
         Conheça nossos projetos:
     </h1>
     <hr>
+    <div class="center_left">
+        <h4 (click)="removerFiltros()">
+            Remover filtros
+        </h4>
+        <hr>
+    </div>
     <div *ngFor="let projeto of projetos; let i = index">
         <div *ngIf="possuiODS(projeto)">
             <div class="center_left">

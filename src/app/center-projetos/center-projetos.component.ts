@@ -43,4 +43,8 @@ export class CenterProjetosComponent implements OnInit {
     }
     return false;
   }
+  public removerFiltros(){
+    this.ods_service.setChosenODS(0);
+    this.id_ods_selecionada = this.ods_service.getChosenODS();
+  }
 }
