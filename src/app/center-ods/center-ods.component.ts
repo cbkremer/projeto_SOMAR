@@ -11,7 +11,6 @@ import { Projeto } from '../model/projeto.model';
 })
 export class CenterOdsComponent implements OnInit {
   private chosen_ods: number = -1;
-  public ods_counter = 0;
   public ods: OdsModel;
   public projetos: Projeto[] = [];
   public low:number;

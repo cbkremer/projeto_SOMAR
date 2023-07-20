@@ -28,7 +28,7 @@ export class CenterProjetoComponent implements OnInit {
     }
 
   ngOnInit(): void {
-
+    console.log("imagem: "+this.projeto.imagens[0]);
   }
   public goToInstituicao(instituicao: InstituicaoModel){
     this.router.navigate(['center-instituicao/'+instituicao.id]);

@@ -8,4 +8,5 @@ export interface Projeto{
     ods: OdsModel[];
     cidade: string;
     instituicoes: InstituicaoModel[];
+    imagens: string[];
 }

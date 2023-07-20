@@ -12,7 +12,7 @@ import { Projeto } from '../model/projeto.model';
 })
 export class OdsCardsHorizontalComponent implements OnInit {
   //se é para mostrar uma lista das ods do projeto
-  @Input() project_ods: Projeto = {id: -1, nome: '', descricao: '',ods: [],cidade:"", instituicoes: []};
+  @Input() project_ods: Projeto = {id: -1, nome: '', descricao: '',ods: [],cidade:"", instituicoes: [], imagens:[]};
   //se é para as ods serem selecionaveis ou nao
   @Input() selectable: boolean = true;
   icone: string = '<i class="bi bi-bicycle"></i>';

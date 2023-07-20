@@ -2,15 +2,16 @@
     <h1 class="left_paragraph">
         Conheça nossas instituições:
     </h1>
+    <hr>
     <div *ngFor="let insti of instituicoes; let i = index">
         <div>
             <div class="center_left">
                 <h2 (click)="goToInstituicao(insti)">
-                    {{insti.nome}}
+                    {{insti.nome}} - {{insti.endereco}}
                 </h2>
                 <div *ngFor="let proj of insti.projetos">
                     <h4 (click)="goToProjeto(proj)">
-                        {{proj.nome}}
+                        {{proj.nome}} - {{proj.cidade}}
                     </h4>
                 </div>
                 <hr>

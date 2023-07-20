@@ -65,15 +65,19 @@
             ],
             "cidade":"Porto Alegre",
             "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []},
-                          {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
+                            {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}],
+            "imagens":["../../assets/PIDS.png","../../assets/imgs/senac3.jpg"]
             },
-        {"id": 2, "nome": "Espelho Inteligente", "descricao": "", "ods": [
+        {"id": 2, "nome": "Espelho Inteligente",
+               "descricao": "Projeto criado por alunos e professores do Senac Tech com o objetio de inovar a indústria de vestimentas e além com a utilização de tecnologias como inteligência artificial para uma melhor e mais imersiva experiencia do usuário.", 
+               "ods": [
               {"id": 7, "nome": "Energia limpa e acessível", "icone": "<i class=\"bi bi-sun-fill\"></i>","numero": 1,"descricao":"", "projetos": []},
               {"id": 8, "nome": "Trabalho e econômia", "icone": "<i class=\"bi bi-bar-chart-fill\"></i>","numero": 9,"descricao":"", "projetos": []},
               {"id": 9, "nome": "Industria, inovação e infra", "icone": "<i class=\"bi bi-boxes\"></i>","numero": 6,"descricao":"", "projetos": []}
-            ],
+             ],
             "cidade":"Porto Alegre",
-            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
+            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}],
+            "imagens":["../../assets/imgs/espelho.jpg","../../assets/imgs/espelho2.jpg"]
             }
     ],
     "instituicoes":[
@@ -98,7 +102,11 @@
           "cidade":"Porto Alegre",
           "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
           }
-        ]
+        ],
+        "telefone":"(51) 3288-7750",
+        "website":"https://www.senacrs.com.br/unidade/18",
+        "imagens":["../../assets/imgs/senac1.jpg","../../assets/imgs/senac3.jpg"],
+        "descricao": "Escola técnica situada em Porto Alegre RS que é ponto de referência em educação e formação de profissionais prontos para o mercado de trabalho com um foco em criar uma futuro melhor e mais tecnológico."
       },
       {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", 
       "projetos": [
@@ -110,7 +118,12 @@
         "cidade":"Porto Alegre",
         "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
         }
-      ]}
+      ],
+      "telefone":"(51) 3288-7750",
+      "website":"https://www.senacrs.com.br/unidade/18",
+      "imagens":["../../assets/imgs/senac1.jpg","../../assets/imgs/senac3.jpg"],
+      "descricao": "Escola técnica situada em Porto Alegre RS que é ponto de referência em educação e formação de profissionais prontos para o mercado de trabalho com um foco em criar uma futuro melhor e mais tecnológico."
+    }
     ]
         
       

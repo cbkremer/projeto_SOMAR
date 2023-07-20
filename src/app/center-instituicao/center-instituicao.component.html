@@ -3,21 +3,19 @@
     <h2>{{instituicao.endereco}}</h2>
     <hr>
     <picture>
-      <img class="img_class" src="../../assets/imgs/senac1.jpg">
+      <img *ngFor="let img of instituicao.imagens" class="img_class" src={{img}}>
     </picture>
     <div class="centered_paragraph">
       <p>
-        O SOMAR é o novo programa de impacto social do Sistema Fecomércio-
-        RS/Sesc/Senac. Por meio dele, serão executados projetos que transformem
-  
-        realidades das comunidades em que o sistema atua e que contribuam para os
-        Objetivos de Desenvolvimento Sustentável, da ONU e bandeiras Fecomércio.
-        Possuem como objetivo final a transformação de uma realidade vigente, sempre
-        levando em consideração as questões sociais, ambientais e de governança das
-        instituições. Sua execução está atrelada aos serviços ofertados pelo Sistema e
-        seus públicos atendidos.
-        São potencializados em parceria com outras partes interessadas, fortalecendo a
-        imagem e o protagonismo do Sistema Comércio.
+        {{instituicao.descricao}}
+      </p>
+      <hr>
+      <h2>
+        Contato:
+      </h2>
+      <a target="_blank" href={{instituicao.website}}>Website</a>
+      <p>
+        Telefone: {{instituicao.telefone}}
       </p>
     </div>
     <app-footer></app-footer>
