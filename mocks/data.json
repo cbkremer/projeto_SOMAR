@@ -5,22 +5,22 @@
             "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.", 
             "ods": [],
             "cidade":"Porto Alegre",
-            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []},
-                            {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires", "projetos": []}]
+            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []},
+                            {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
             }]},
             {"id": 2, "nome": "Agricultura sustentável", "icone": "<i class=\"bi bi-egg-fill\"></i>","numero": 6,"descricao":"Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável.", "projetos": [{"id": 1, "nome": "PIDS Tech",
             "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.", 
             "ods": [],
             "cidade":"Porto Alegre",
-            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []},
-                            {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires", "projetos": []}]
+            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []},
+                            {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
             }]},
             {"id": 3, "nome": "Saúde e bem estar", "icone": "<i class=\"bi bi-heart-pulse-fill\"></i>","numero": 7,"descricao":"Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.", "projetos": [{"id": 1, "nome": "PIDS Tech",
             "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.", 
             "ods": [],
             "cidade":"Porto Alegre",
-            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []},
-                            {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires", "projetos": []}]
+            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []},
+                            {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
             }]},
             {"id": 4, "nome": "Educação de qualidade", "icone": "<i class=\"bi bi-pencil-fill\"></i>","numero": 9,"descricao":"Assegurar a educação inclusiva, e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos.", "projetos": []},
             {"id": 5, "nome": "Igualdade de gênero", "icone": "<i class=\"bi bi-gender-ambiguous\"></i>","numero": 5,"descricao":"Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas.", "projetos": []},
@@ -37,14 +37,14 @@
               {"id": 8, "nome": "Trabalho e econômia", "icone": "<i class=\"bi bi-bar-chart-fill\"></i>","numero": 9,"descricao":"", "projetos": []},
               {"id": 9, "nome": "Industria, inovação e infra", "icone": "<i class=\"bi bi-boxes\"></i>","numero": 6,"descricao":"", "projetos": []}
             ],
-            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []}]
+            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
             }]},
             {"id": 9, "nome": "Industria, inovação e infra", "icone": "<i class=\"bi bi-boxes\"></i>","numero": 6,"descricao":"Construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável, e fomentar a inovação.", "projetos": [{"id": 2, "nome": "Espelho Inteligente", "descricao": "", "ods": [
               {"id": 7, "nome": "Energia limpa e acessível", "icone": "<i class=\"bi bi-sun-fill\"></i>","numero": 1,"descricao":"", "projetos": []},
               {"id": 8, "nome": "Trabalho e econômia", "icone": "<i class=\"bi bi-bar-chart-fill\"></i>","numero": 9,"descricao":"", "projetos": []},
               {"id": 9, "nome": "Industria, inovação e infra", "icone": "<i class=\"bi bi-boxes\"></i>","numero": 6,"descricao":"", "projetos": []}
             ],
-            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []}]
+            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
             }]},
             {"id": 10, "nome": "Redução de desigualdades", "icone": "<i class=\"bi bi-align-middle\"></i>","numero": 10,"descricao":"Reduzir as desigualdades dentro dos países e entre eles.", "projetos": []},
             {"id": 11, "nome": "Comunidades sustentaveis", "icone": "<i class=\"bi bi-buildings-fill\"></i>","numero": 2,"descricao":"Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis.", "projetos": []},
@@ -64,8 +64,8 @@
               {"id": 3, "nome": "Saúde e bem estar", "icone": "<i class=\"bi bi-heart-pulse-fill\"></i>","numero": 7,"descricao":"", "projetos": []}
             ],
             "cidade":"Porto Alegre",
-            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []},
-                          {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires", "projetos": []}]
+            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []},
+                          {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
             },
         {"id": 2, "nome": "Espelho Inteligente", "descricao": "", "ods": [
               {"id": 7, "nome": "Energia limpa e acessível", "icone": "<i class=\"bi bi-sun-fill\"></i>","numero": 1,"descricao":"", "projetos": []},
@@ -73,7 +73,7 @@
               {"id": 9, "nome": "Industria, inovação e infra", "icone": "<i class=\"bi bi-boxes\"></i>","numero": 6,"descricao":"", "projetos": []}
             ],
             "cidade":"Porto Alegre",
-            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []}]
+            "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
             }
     ],
     "instituicoes":[
@@ -87,8 +87,8 @@
             {"id": 3, "nome": "Saúde e bem estar", "icone": "<i class=\"bi bi-heart-pulse-fill\"></i>","numero": 7,"descricao":"", "projetos": []}
           ],
           "cidade":"Porto Alegre",
-          "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []},
-                          {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires", "projetos": []}]
+          "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []},
+                          {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
           },
           {"id": 2, "nome": "Espelho Inteligente", "descricao": "", "ods": [
             {"id": 7, "nome": "Energia limpa e acessível", "icone": "<i class=\"bi bi-sun-fill\"></i>","numero": 1,"descricao":"", "projetos": []},
@@ -96,11 +96,11 @@
             {"id": 9, "nome": "Industria, inovação e infra", "icone": "<i class=\"bi bi-boxes\"></i>","numero": 6,"descricao":"", "projetos": []}
           ],
           "cidade":"Porto Alegre",
-          "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []}]
+          "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
           }
         ]
       },
-      {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires", 
+      {"id": 2, "nome": "Exemplo 2", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", 
       "projetos": [
         {"id": 2, "nome": "Espelho Inteligente", "descricao": "", "ods": [
           {"id": 7, "nome": "Energia limpa e acessível", "icone": "<i class=\"bi bi-sun-fill\"></i>","numero": 1,"descricao":"", "projetos": []},
@@ -108,7 +108,7 @@
           {"id": 9, "nome": "Industria, inovação e infra", "icone": "<i class=\"bi bi-boxes\"></i>","numero": 6,"descricao":"", "projetos": []}
         ],
         "cidade":"Porto Alegre",
-        "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires", "projetos": []}]
+        "instituicoes":[{"id": 1, "nome": "Senac Tech", "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191", "projetos": []}]
         }
       ]}
     ]

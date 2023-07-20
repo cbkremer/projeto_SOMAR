@@ -4,5 +4,6 @@ export interface InstituicaoModel{
     id: number;
     nome: string;
     endereco: string;
+    
     projetos: Projeto[];
   }

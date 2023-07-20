@@ -6,11 +6,11 @@
         <div *ngIf="possuiODS(projeto)">
             <div class="center_left">
                 <h2 (click)="goToProjeto(projeto)">
-                    {{projeto.nome}}
+                    {{projeto.nome}} - {{projeto.cidade}}
                 </h2>
                 <div *ngFor="let insti of projeto.instituicoes">
                     <h4 (click)="goToInstituicao(insti)" style="cursor:pointer;">
-                        {{insti.nome}}
+                        {{insti.nome}} - {{insti.endereco}}
                     </h4>
                 </div>
                 <hr>
