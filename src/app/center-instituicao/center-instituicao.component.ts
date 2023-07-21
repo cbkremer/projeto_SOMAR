@@ -9,7 +9,6 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./center-instituicao.component.css']
 })
 export class CenterInstituicaoComponent implements OnInit {
-
   public instituicao: any;
   constructor(
     private insti_service: GetInstituicaoService,

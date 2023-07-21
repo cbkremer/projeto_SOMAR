@@ -13,7 +13,7 @@ export class GetOdsService {
   public low:number = 3;
   public mid:number = 7;
   constructor(private http:HttpClient) { }
-  public getAllODS2():OdsModel[]{
+  /*public getAllODS2():OdsModel[]{
     return [{id: 1, nome: 'Erradicação da pobreza', icone: '<i class="bi bi-people-fill"></i>',numero: 2,descricao:"Acabar com a pobreza em todas as suas formas, em todos os lugares.", projetos: []},
             {id: 2, nome: 'Agricultura sustentável', icone: '<i class="bi bi-egg-fill"></i>',numero: 6,descricao:"Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável.", projetos: []},
             {id: 3, nome: 'Saúde e bem estar', icone: '<i class="bi bi-heart-pulse-fill"></i>',numero: 7,descricao:"Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.", projetos: []},
@@ -32,7 +32,7 @@ export class GetOdsService {
             {id: 16, nome: 'Paz justiça e eficácia', icone: '<i class="bi bi-peace"></i>',numero: 5,descricao:"Promover sociedades pacificas e inclusivas para desenvolvimento sustentável, providenciar acesso à justiça à todos e construir instituições inclusivas e responsáveis em todos os níveis.", projetos: []},
             {id: 17, nome: 'Parcerias e aplicação', icone: '<i class="bi bi-hand-thumbs-up-fill"></i>',numero: 7,descricao:"Fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável.", projetos: []},
     ];
-  }
+  }*/
   public getOdsByID(id:number):Observable<OdsModel>{
     return this.http.get<OdsModel>('http://localhost:3000/ods/'+id);
   }

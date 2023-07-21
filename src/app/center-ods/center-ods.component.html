@@ -21,7 +21,7 @@
             </h1>
             <div id="the_ods_card_red" *ngIf="ods.numero < low">
                 <div class="ods_numero">
-                  {{ods.numero}}
+                  {{ods.id}}
                 </div>
                 <div class="ods_nome">
                   {{ods.nome}}
@@ -30,7 +30,7 @@
             </div>
             <div id="the_ods_card_yellow" *ngIf="ods.numero >= low && ods.numero < mid">
                 <div class="ods_numero">
-                  {{ods.numero}}
+                  {{ods.id}}
                 </div>
                 <div class="ods_nome">
                   {{ods.nome}}
@@ -39,7 +39,7 @@
             </div>
             <div id="the_ods_card_green" *ngIf="ods.numero >= mid">
                 <div class="ods_numero">
-                  {{ods.numero}}
+                  {{ods.id}}
                 </div>
                 <div class="ods_nome">
                   {{ods.nome}}

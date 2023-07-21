@@ -21,8 +21,8 @@ export class OdsCardsHorizontalComponent implements OnInit {
   ods_list: any = [];
   //the chosen ods
   public i: number = 0;
-
-  
+  public cardColor: string = "black";
+  public hover: boolean = false;
   constructor(private ods_service: GetOdsService) {
     this.low = ods_service.low;
     this.mid = ods_service.mid;
@@ -49,5 +49,11 @@ export class OdsCardsHorizontalComponent implements OnInit {
       console.log("selecionou a ods: "+id);
       this.ods_service.setChosenODS(id);
     }
+  }
+  public setODSColor(ods: OdsModel): string{
+    return "blue";
+  }
+  public setODSColor2(ods: OdsModel): string{
+    return "white";
   }
 }
