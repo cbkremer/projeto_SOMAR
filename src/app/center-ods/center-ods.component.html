@@ -19,7 +19,15 @@
             <h1 class="left_most_paragraph">
                 {{ods.nome}}
             </h1>
-            <div id="the_ods_card">
+            <div
+            style="background: {{ods.cor}};
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+            float: left;
+            transition: 150ms;
+            overflow: hidden;
+            border-radius: 5px;">
                 <img src={{getODSImage(ods.id)}}/>
             </div>
             <p class="left_bold_paragraph">

@@ -53,7 +53,7 @@ export class OdsCardsHorizontalComponent implements OnInit {
   }
   public setODSColor(ods: OdsModel){
     this.cor_original_ods = ods.cor;
-    ods.cor = "black";
+    ods.cor = "magenta";
   }
   public setODSColor2(ods: OdsModel){
     ods.cor = this.cor_original_ods;
