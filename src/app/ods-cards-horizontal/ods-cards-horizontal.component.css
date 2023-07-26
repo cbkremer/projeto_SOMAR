@@ -4,6 +4,20 @@
   margin: auto;
   overflow: auto;
 }
+#the_ods_card{
+  background: red;
+  height: 100px;
+  width: 100px;
+  margin: 2px;
+  float: left;
+  transition: 150ms;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#the_ods_card:hover{
+  background-color: rgb(122, 0, 0);
+}
 #the_ods_card_red{
   background: red;
   height: 100px;

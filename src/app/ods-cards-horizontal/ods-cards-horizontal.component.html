@@ -1,17 +1,17 @@
 
 <div class="ods_cards_div">
   <div *ngFor="let ods of ods_list; let i = index">
-    <div id="the_ods_card_red" 
-         [style.background-color]="setODSColor(ods)" 
-         (click)="setODSChoice(ods.id)"
-    >
-        <div class="ods_numero">
-          {{ods.id}}
-        </div>
-        <div class="ods_nome">
-          {{ods.nome}}
-        </div>
-        <div class="ods_icone" [innerHTML]="ods.icone"></div>
+    <div (click)="setODSChoice(ods.id)" (mouseover)="setODSColor(ods)" (mouseleave)="setODSColor2(ods)"
+      style="background: {{ods.cor}};
+      height: 100px;
+      width: 100px;
+      margin: 2px;
+      float: left;
+      transition: 150ms;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 5px;">
+      <img src={{getODSImage(ods.id)}}/>
     </div>
   </div>
 </div>

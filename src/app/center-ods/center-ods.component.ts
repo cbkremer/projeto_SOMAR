@@ -11,7 +11,7 @@ import { Projeto } from '../model/projeto.model';
 })
 export class CenterOdsComponent implements OnInit {
   private chosen_ods: number = -1;
-  public ods: OdsModel;
+  public ods: any;
   public projetos: Projeto[] = [];
   public low:number;
   public mid:number;
@@ -19,7 +19,7 @@ export class CenterOdsComponent implements OnInit {
     private ods_service: GetOdsService,
     private projeto_service: GetProjetosService
   ) {
-    this.ods = {id: 1, nome:"", icone:"", numero:0,descricao:"", projetos: []};
+    this.ods = {};
     this.low = ods_service.low;
     this.mid = ods_service.mid;
   }
@@ -37,5 +37,8 @@ export class CenterOdsComponent implements OnInit {
       });
     }
     return this.chosen_ods;
+  }
+  public getODSImage(id: number): string{
+    return "../../assets/imgs/ODS/sdg"+id+".png";
   }
 }

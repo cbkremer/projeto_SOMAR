@@ -19,32 +19,8 @@
             <h1 class="left_most_paragraph">
                 {{ods.nome}}
             </h1>
-            <div id="the_ods_card_red" *ngIf="ods.numero < low">
-                <div class="ods_numero">
-                  {{ods.id}}
-                </div>
-                <div class="ods_nome">
-                  {{ods.nome}}
-                </div>
-                <div class="ods_icone" [innerHTML]="ods.icone"></div>
-            </div>
-            <div id="the_ods_card_yellow" *ngIf="ods.numero >= low && ods.numero < mid">
-                <div class="ods_numero">
-                  {{ods.id}}
-                </div>
-                <div class="ods_nome">
-                  {{ods.nome}}
-                </div>
-                <div class="ods_icone" [innerHTML]="ods.icone"></div>
-            </div>
-            <div id="the_ods_card_green" *ngIf="ods.numero >= mid">
-                <div class="ods_numero">
-                  {{ods.id}}
-                </div>
-                <div class="ods_nome">
-                  {{ods.nome}}
-                </div>
-                <div class="ods_icone" [innerHTML]="ods.icone"></div>
+            <div id="the_ods_card">
+                <img src={{getODSImage(ods.id)}}/>
             </div>
             <p class="left_bold_paragraph">
                 Indice de desenvolvimento: <em>{{ods.numero}}</em>

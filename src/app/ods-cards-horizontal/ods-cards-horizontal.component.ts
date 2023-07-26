@@ -19,6 +19,7 @@ export class OdsCardsHorizontalComponent implements OnInit {
   low:number;
   mid:number;
   ods_list: any = [];
+  cor_original_ods: string = "";
   //the chosen ods
   public i: number = 0;
   public cardColor: string = "black";
@@ -50,10 +51,14 @@ export class OdsCardsHorizontalComponent implements OnInit {
       this.ods_service.setChosenODS(id);
     }
   }
-  public setODSColor(ods: OdsModel): string{
-    return "blue";
+  public setODSColor(ods: OdsModel){
+    this.cor_original_ods = ods.cor;
+    ods.cor = "black";
   }
-  public setODSColor2(ods: OdsModel): string{
-    return "white";
+  public setODSColor2(ods: OdsModel){
+    ods.cor = this.cor_original_ods;
+  }
+  public getODSImage(id: number): string{
+    return "../../assets/imgs/ODS/sdg"+id+".png";
   }
 }
