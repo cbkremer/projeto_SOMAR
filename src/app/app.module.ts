@@ -16,6 +16,7 @@ import { CenterInstituicaoComponent } from './center-instituicao/center-institui
 import { CenterInstituicoesComponent } from './center-instituicoes/center-instituicoes.component';
 import { GetProjetosService } from './services/get-projetos.service';
 import { ImgCarouselComponent } from './img-carousel/img-carousel.component';
+import { CenterCadastroInstituicaoComponent } from './center-cadastro-instituicao/center-cadastro-instituicao.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ImgCarouselComponent } from './img-carousel/img-carousel.component';
     CenterInstituicaoComponent,
     CenterInstituicoesComponent,
     ImgCarouselComponent,
+    CenterCadastroInstituicaoComponent,
   ],
   imports: [
     BrowserModule,

@@ -210,6 +210,7 @@ img{
 	cursor: pointer;
 	outline: inherit;
   border-radius: 5px;
+  margin-right: 20px;
 }
 .default_form button:hover{
   color: white;

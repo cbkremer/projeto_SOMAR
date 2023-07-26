@@ -1,0 +1,46 @@
+<section class="center_login_section">
+    <form class="default_form" (ngSubmit)="criarConta()">
+        <label class="aviso_conta_info" *ngIf="aviso != ''">{{aviso}}</label>
+        <br>
+        <br>
+        <label class="criar_conta_label">CNPJ</label>
+        <br>
+        <br>
+        <input type="email" class="form_input" [(ngModel)]="cnpj" placeholder="12.345.678/0001-00">
+        <br>
+        <br>
+        <label class="criar_conta_label">Senha</label>
+        <br>
+        <br>
+        <input type="password" class="form_input" [(ngModel)]="password" name="password" placeholder="**************">
+        <br>
+        <br>
+        <label class="criar_conta_label">Website</label>
+        <br>
+        <br>
+        <input type="text" class="form_input" [(ngModel)]="website" name="website" placeholder="https://exemplo.com.br">
+        <br>
+        <br>
+        <label class="criar_conta_label">Endereço</label>
+        <br>
+        <br>
+        <input type="text" class="form_input" [(ngModel)]="endereco" name="endereco" placeholder="AV. exemplo n 222, Cidade, Estado">
+        <br>
+        <br>
+        <label class="criar_conta_label">Telefone</label>
+        <br>
+        <br>
+        <input type="text" class="form_input" [(ngModel)]="contato" name="telefone" placeholder="5551998461302">
+        <br>
+        <br>
+        <label class="criar_conta_label">Descrição</label>
+        <br>
+        <br>
+        <input type="text" class="form_input" [(ngModel)]="contato" name="descricao" placeholder="Somos uma instituição voltada a ajudar...">
+        <br>
+        <br>
+        <br>
+        <button type="submit">Criar</button>
+      </form>
+      <app-footer></app-footer>
+</section>
