@@ -9,6 +9,11 @@
                 <h2 (click)="goToInstituicao(insti)">
                     {{insti.nome}} - {{insti.endereco}}
                 </h2>
+                <div *ngIf="insti.projetos.length <= 0">
+                    <h4>
+                        Nenhum projeto cadastrado...
+                    </h4>
+                </div>
                 <div *ngFor="let proj of insti.projetos">
                     <h4 (click)="goToProjeto(proj)">
                         {{proj.nome}} - {{proj.cidade}}
