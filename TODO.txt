@@ -5,3 +5,5 @@ pagina da ods
 pagina do projeto   
     carrosel de imagens
     upload de imagens
+cadastro de instituicao
+    mascaras

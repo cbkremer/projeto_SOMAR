@@ -44,4 +44,14 @@ export class GetInstituicaoService {
   public getAllInstituicoes():Observable<InstituicaoModel[]>{
     return this.http.get<InstituicaoModel[]>('http://localhost:3000/instituicoes');
   }
+  public criarInstituicao(insti: InstituicaoModel){
+    this.http.post<InstituicaoModel>("http://localhost:3000/instituicoes", insti).subscribe(
+      data => {
+        console.log("achoq deu? "+data);
+      },
+      error =>{
+        console.log("deu ruimkkk "+error);
+      }
+    );
+  }
 }
