@@ -7,3 +7,6 @@ pagina do projeto
     upload de imagens
 cadastro de instituicao
     mascaras
+login
+    validacao
+cadastrar projeto
