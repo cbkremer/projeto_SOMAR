@@ -452,6 +452,7 @@
   "instituicoes": [
     {
       "id": 1,
+      "cnpj": "264827364782364",
       "nome": "Senac Tech",
       "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
       "projetos": [
@@ -558,6 +559,7 @@
     },
     {
       "id": 2,
+      "cnpj": "2",
       "nome": "Exemplo 2",
       "endereco": "Av. Alberto Bins 810 Centro Histórico - PORTO ALEGRE - RS CEP 90030-142",
       "projetos": [
@@ -612,16 +614,6 @@
         "../../assets/imgs/senac3.jpg"
       ],
       "descricao": "Escola técnica situada em Porto Alegre RS que é ponto de referência em educação e formação de profissionais prontos para o mercado de trabalho com um foco em criar uma futuro melhor e mais tecnológico."
-    },
-    {
-      "id": 3,
-      "nome": "asdasda",
-      "endereco": "asdasd",
-      "projetos": [],
-      "contato": "asdasdas",
-      "descricao": "dasdasdasd",
-      "imagens": [],
-      "website": "sdasdasd"
     }
   ]
 }

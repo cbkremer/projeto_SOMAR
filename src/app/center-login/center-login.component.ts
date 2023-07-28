@@ -1,6 +1,7 @@
 import { FormsModule } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginServiceService } from '../services/login-service.service';
 
 @Component({
   selector: 'app-center-login',
@@ -13,14 +14,14 @@ export class CenterLoginComponent implements OnInit {
   cnpj: string = '';
   password:string = '';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private login_service: LoginServiceService) { }
 
   ngOnInit(): void {
   }
-  login(){
-
-  }
   public goToCadastroInsti(){
     this.router.navigate(['center-criar-instituicao']);
+  }
+  public logar(){
+    this.login_service.login(this.cnpj);
   }
 }

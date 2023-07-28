@@ -32,7 +32,7 @@ import { CenterCadastroInstituicaoComponent } from './center-cadastro-instituica
     CenterInstituicaoComponent,
     CenterInstituicoesComponent,
     ImgCarouselComponent,
-    CenterCadastroInstituicaoComponent,
+    CenterCadastroInstituicaoComponent
   ],
   imports: [
     BrowserModule,

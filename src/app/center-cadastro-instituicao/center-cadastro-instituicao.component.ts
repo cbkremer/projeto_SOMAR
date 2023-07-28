@@ -21,13 +21,14 @@ export class CenterCadastroInstituicaoComponent implements OnInit {
   descricao: string= '';
   
 
-  constructor(private http: HttpClient, private insti_service: GetInstituicaoService) { }
+  constructor(private insti_service: GetInstituicaoService) { }
 
   ngOnInit(): void {
   }
   public criarConta(){
     let insti: InstituicaoModel = {
       id: 0,
+      cnpj: this.cnpj,
       nome: this.nome, 
       endereco: this.endereco, 
       projetos: [], 
@@ -36,7 +37,6 @@ export class CenterCadastroInstituicaoComponent implements OnInit {
       imagens: [], 
       website: this.website
     }
-    console.log(this.insti_service.criarInstituicao(insti));
+    this.insti_service.criarInstituicao(insti);
   }
-
 }
