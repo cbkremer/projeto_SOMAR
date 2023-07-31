@@ -23,18 +23,21 @@ export class CenterAdicionarProjetoComponent implements OnInit {
     private insti_service:GetInstituicaoService, 
     private act_route:ActivatedRoute,
     private proj_service:GetProjetosService
-  ) { }
+  ) 
+  {
+    this.insti_service.getInstituicaoById(Number(this.act_route.snapshot.paramMap.get('id'))).subscribe((insti:InstituicaoModel) =>{
+      console.table(insti);
+      this.institu = insti;
+    });
+  }
 
   ngOnInit(): void {
   }
   adicionarProj(){
-    this.insti_service.getInstituicaoById(Number(this.act_route.snapshot.paramMap.get('id'))).subscribe((insti:InstituicaoModel) =>{
-      this.institu = insti;
-    });
-    //console.log('insti nome: '+institu.nome);
     let insti_list: InstituicaoModel[] = [];
-    //console.log('nome insti depois: '+this.institu.nome);
     insti_list.push(this.institu);
+    //console.log('insti nome: '+institu.nome);
+    //console.log('nome insti depois: '+this.institu.nome);
     let projeto: Projeto = {
       id: 0,
       nome: this.nome,
