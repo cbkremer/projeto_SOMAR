@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { GetOdsService } from '../services/get-ods.service';
+import { LoginServiceService } from '../services/login-service.service';
 
 @Component({
   selector: 'app-top-bar',
@@ -9,7 +10,7 @@ import { GetOdsService } from '../services/get-ods.service';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor(private router: Router, private ods_service: GetOdsService) { }
+  constructor(private router: Router, private ods_service: GetOdsService, private login_service: LoginServiceService) { }
 
   ngOnInit(): void {
   }
@@ -28,5 +29,21 @@ export class TopBarComponent implements OnInit {
   }
   gotToInstituicoes(){
     this.router.navigate(['center-instituicoes']);
+  }
+  logado(): Boolean{
+    let id = sessionStorage.getItem('user_id');
+    console.log(id);
+    if(id == null || id == undefined || id == ''){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
+  goToMinhaInsti(){
+    this.router.navigate(['center-instituicao/'+sessionStorage.getItem('user_id')]);
+  }
+  logout(){
+    this.login_service.logout();
   }
 }
