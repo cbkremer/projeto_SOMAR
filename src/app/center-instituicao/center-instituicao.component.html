@@ -2,6 +2,9 @@
     <h1 style="color:black;">{{instituicao.nome}}</h1>
     <h2>{{instituicao.endereco}}</h2>
     <hr>
+    <div *ngIf="minhaInsti()">
+      <h1 (click)="adicionarProj()">Adicionar Projeto</h1>
+    </div>
     <picture>
       <img *ngFor="let img of instituicao.imagens" class="img_class" src={{img}}>
     </picture>

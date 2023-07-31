@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GetProjetosService {
+  
   //colocar só a id dentro do model ao inves da lista
   constructor(private ods_service: GetOdsService, private http:HttpClient) { }
   /*public getAllProjetos2(): Projeto[]{
@@ -51,5 +52,8 @@ export class GetProjetosService {
   }
   public getAllProjetos(): Observable<Projeto[]>{
     return this.http.get<Projeto[]>('http://localhost:3000/projeto');
+  }
+  addProj(projeto: Projeto) {
+    this.http.post('http://localhost:3000/projeto', projeto).subscribe();
   }
 }

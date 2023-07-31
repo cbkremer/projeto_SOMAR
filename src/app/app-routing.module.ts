@@ -8,6 +8,7 @@ import { CenterOdsComponent } from './center-ods/center-ods.component';
 import { CenterInstituicaoComponent } from './center-instituicao/center-instituicao.component';
 import { CenterInstituicoesComponent } from './center-instituicoes/center-instituicoes.component';
 import { CenterCadastroInstituicaoComponent } from './center-cadastro-instituicao/center-cadastro-instituicao.component';
+import { CenterAdicionarProjetoComponent } from './center-adicionar-projeto/center-adicionar-projeto.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'center-main', pathMatch: 'full'},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: 'center-ods', component: CenterOdsComponent},
   {path: 'center-instituicao/:id', component: CenterInstituicaoComponent},
   {path: 'center-instituicoes', component: CenterInstituicoesComponent},
-  {path: 'center-criar-instituicao', component: CenterCadastroInstituicaoComponent}
+  {path: 'center-criar-instituicao', component: CenterCadastroInstituicaoComponent},
+  {path: 'center-adicionar-projeto/:id', component: CenterAdicionarProjetoComponent}
 ];
 
 @NgModule({
