@@ -9,13 +9,27 @@
         {{projeto.descricao}}
     </p>
     <h2>Parceiros:</h2>
-    <div *ngFor="let insti of projeto.instituicoes">
+    <div class="add_ods_proj_div" *ngFor="let insti of projeto.instituicoes">
         <h3 (click)="goToInstituicao(insti)" style="cursor:pointer;">
             {{insti.nome}}
         </h3>
     </div>
-    <br>
+    <div class="add_ods_proj_div" *ngIf="minhaInsti()">
+        <hr>
+        <h3 (click)="editarODS()">Editar ODS</h3>
+    </div>
     <hr>
-    <app-ods-cards-horizontal [project_ods]=projeto [selectable]="false"></app-ods-cards-horizontal>
+    <div *ngIf="editar_ods">
+        <h3>Clique para adicionar:</h3>
+        <app-ods-cards-horizontal (click)="checarODS()" [selectable]="true"></app-ods-cards-horizontal>
+        <h3>ODS Atuais:</h3>
+        <app-ods-cards-horizontal [ods]=novas_ods [selectable]="false"></app-ods-cards-horizontal>
+        <h3>ODS Antigas:</h3>
+        <app-ods-cards-horizontal [project_ods]=projeto [selectable]="false"></app-ods-cards-horizontal>
+        <h3 style="cursor: pointer;" (click)="salvarODS()">Salvar</h3>
+    </div>
+    <div *ngIf="editar_ods == false">
+        <app-ods-cards-horizontal [project_ods]=projeto [selectable]="false"></app-ods-cards-horizontal>
+    </div>
     <app-footer></app-footer>
 </section>

@@ -57,6 +57,10 @@ ul.topnav li a:hover{
   min-height: 90vh;
   /*unnecessary but does not hurt*/
 }
+.center_main_section h3{
+  max-width: fit-content;
+  position: center;
+}
 .center_left{
   font-family: verdana;
   color: black;
@@ -133,6 +137,14 @@ img{
 }
 .bold{
   font-weight: bold;
+}
+.add_ods_proj_div h3{
+  cursor: pointer;
+  transition: 200ms;
+}
+.add_ods_proj_div h3:hover{
+  cursor: pointer;
+  color:black;
 }
 /*--------------------------------------------------------------------------------footer*/
 .footer{

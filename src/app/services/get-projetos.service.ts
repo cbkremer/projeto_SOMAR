@@ -56,4 +56,7 @@ export class GetProjetosService {
   addProj(projeto: Projeto) {
     this.http.post('http://localhost:3000/projeto', projeto).subscribe();
   }
+  public updateProj(projeto: Projeto){
+    this.http.put('http://localhost:3000/projeto/'+projeto.id, projeto).subscribe();
+  }
 }

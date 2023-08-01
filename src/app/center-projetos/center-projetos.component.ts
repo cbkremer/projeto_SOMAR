@@ -32,8 +32,9 @@ export class CenterProjetosComponent implements OnInit {
     this.router.navigate(['center-instituicao/'+instituicao.id]);
   }
   public possuiODS(project:Projeto):Boolean{
+    this.id_ods_selecionada = this.ods_service.getChosenODS();
+    console.log(this.id_ods_selecionada);
     for (let i = 0; i < project.ods.length; i++) {
-      this.id_ods_selecionada = this.ods_service.getChosenODS();
       if(this.id_ods_selecionada == 0){
         return true;
       }

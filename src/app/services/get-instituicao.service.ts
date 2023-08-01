@@ -17,6 +17,7 @@ export class GetInstituicaoService {
   public getInstituicaoByCNPJ(cnpj: string): Observable<InstituicaoModel[]>{
     //puta que me pariu
     return this.http.get<InstituicaoModel[]>("http://localhost:3000/instituicoes?cnpj="+cnpj);
+    //http://localhost:3000/projeto?nome_like=exe
   }
   public getAllInstituicoes():Observable<InstituicaoModel[]>{
     return this.http.get<InstituicaoModel[]>('http://localhost:3000/instituicoes');

@@ -13,6 +13,7 @@ import { Projeto } from '../model/projeto.model';
 export class OdsCardsHorizontalComponent implements OnInit {
   //se é para mostrar uma lista das ods do projeto
   @Input() project_ods: Projeto = {id: -1, nome: '', descricao: '',ods: [],cidade:"", instituicoes: [], imagens:[]};
+  @Input() ods: any;
   //se é para as ods serem selecionaveis ou nao
   @Input() selectable: boolean = true;
   icone: string = '<i class="bi bi-bicycle"></i>';
@@ -30,16 +31,20 @@ export class OdsCardsHorizontalComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    if(this.project_ods.id != -1){
-      console.log(this.project_ods.ods.length);
-      this.ods_list = this.project_ods.ods;
+    if(this.ods != null){
+      this.ods_list = this.ods;
     }
     else{
-      this.ods_service.getAllODS().subscribe((list:OdsModel[]) => {
-        this.ods_list = list;
-      });
+      if(this.project_ods.id != -1){
+        this.ods_list = this.project_ods.ods;
+      }
+      else{
+        this.ods_service.getAllODS().subscribe((list:OdsModel[]) => {
+          this.ods_list = list;
+        });
+      }
     }
-    console.log(this.ods_list);
+    //console.log(this.ods_list);
   }
   getOdsNumber(index: number): number{
     return this.ods_list[index].numero;

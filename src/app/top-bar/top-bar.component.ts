@@ -32,7 +32,7 @@ export class TopBarComponent implements OnInit {
   }
   logado(): Boolean{
     let id = sessionStorage.getItem('user_id');
-    console.log(id);
+    //console.log(id);
     if(id == null || id == undefined || id == ''){
       return false;
     }
