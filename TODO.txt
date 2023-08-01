@@ -9,6 +9,4 @@ cadastro de instituicao
     mascaras
 login
     validacao
-cadastrar projeto
-    cadatrar ods do projeto --
 filtrar por instituicao e pesquisa

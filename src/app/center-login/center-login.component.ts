@@ -24,4 +24,18 @@ export class CenterLoginComponent implements OnInit {
   public logar(){
     this.login_service.login(this.cnpj);
   }
+  public mascaraCNPJ(){
+    if(this.cnpj.length == 2){
+      this.cnpj = this.cnpj+".";
+    }
+    if(this.cnpj.length == 6){
+      this.cnpj = this.cnpj+".";
+    }
+    if(this.cnpj.length == 10){
+      this.cnpj = this.cnpj+"/";
+    }
+    if(this.cnpj.length == 15){
+      this.cnpj = this.cnpj+"-";
+    }
+  }
 }
