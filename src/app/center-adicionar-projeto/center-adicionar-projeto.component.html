@@ -22,10 +22,10 @@
         <br>
         <br>
         <br>
-        <h3>Clique para adicionar uma ODS:</h3>
+        <h3>TOdas ODS - clique para adicionar:</h3>
         <app-ods-cards-horizontal (click)="checarODS()" [selectable]="true"></app-ods-cards-horizontal>
-        <h3>ODS Adicionadas:</h3>
-        <app-ods-cards-horizontal [ods]=novas_ods [selectable]="false"></app-ods-cards-horizontal>
+        <h3>ODS Adicionadas - clique para remover:</h3>
+        <app-ods-cards-horizontal (click)="removerODS()" [ods]=novas_ods [selectable]="true"></app-ods-cards-horizontal>
         <button type="submit">Cadastrar</button>
         <br>
         <br>

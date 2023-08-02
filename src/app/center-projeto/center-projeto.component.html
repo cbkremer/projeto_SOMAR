@@ -20,13 +20,15 @@
     </div>
     <hr>
     <div *ngIf="editar_ods">
-        <h3>Clique para adicionar uma ODS:</h3>
+        <h3>Todas ODS - clique para adicionar:</h3>
         <app-ods-cards-horizontal (click)="checarODS()" [selectable]="true"></app-ods-cards-horizontal>
-        <h3>ODS Atuais:</h3>
-        <app-ods-cards-horizontal [ods]=novas_ods [selectable]="false"></app-ods-cards-horizontal>
+        <h3>ODS Atuais - Clique para remover:</h3>
+        <app-ods-cards-horizontal (click)="removerODS()" [ods]=novas_ods [selectable]="true"></app-ods-cards-horizontal>
         <h3>ODS Antigas:</h3>
         <app-ods-cards-horizontal [project_ods]=projeto [selectable]="false"></app-ods-cards-horizontal>
-        <h3 style="cursor: pointer;" (click)="salvarODS()">Salvar</h3>
+        <form class="default_form">
+            <button type="button" (click)="salvarODS()">Salvar</button>
+        </form>
     </div>
     <div *ngIf="editar_ods == false">
         <app-ods-cards-horizontal [project_ods]=projeto [selectable]="false"></app-ods-cards-horizontal>

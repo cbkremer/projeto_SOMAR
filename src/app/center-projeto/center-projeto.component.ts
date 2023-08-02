@@ -63,6 +63,14 @@ export class CenterProjetoComponent implements OnInit {
       this.novas_ods.push(this.todas_ods[chosen_ods-1]);
     }
   }
+  removerODS(){
+    let chosen_ods = this.ods_service.getChosenODS();
+    for(let i =0;i<this.novas_ods.length;i++){
+      if(this.novas_ods[i].id == chosen_ods){
+        this.novas_ods.splice(i,1);
+      }
+    }
+  }
   salvarODS(){
     this.projeto.ods = this.novas_ods;
     this.projeto_service.updateProj(this.projeto);
