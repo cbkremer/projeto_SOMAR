@@ -22,6 +22,10 @@
         <br>
         <br>
         <br>
+        <h3>Clique para adicionar uma ODS:</h3>
+        <app-ods-cards-horizontal (click)="checarODS()" [selectable]="true"></app-ods-cards-horizontal>
+        <h3>ODS Adicionadas:</h3>
+        <app-ods-cards-horizontal [ods]=novas_ods [selectable]="false"></app-ods-cards-horizontal>
         <button type="submit">Cadastrar</button>
         <br>
         <br>

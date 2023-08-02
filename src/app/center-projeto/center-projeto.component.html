@@ -20,7 +20,7 @@
     </div>
     <hr>
     <div *ngIf="editar_ods">
-        <h3>Clique para adicionar:</h3>
+        <h3>Clique para adicionar uma ODS:</h3>
         <app-ods-cards-horizontal (click)="checarODS()" [selectable]="true"></app-ods-cards-horizontal>
         <h3>ODS Atuais:</h3>
         <app-ods-cards-horizontal [ods]=novas_ods [selectable]="false"></app-ods-cards-horizontal>

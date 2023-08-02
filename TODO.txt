@@ -7,6 +7,9 @@ pagina do projeto
     upload de imagens
 cadastro de instituicao
     mascaras
+cadastro de projetos
+    adicionar instituicao ao projeto
+    adicionar ods na criacao do projeto
 login
     validacao
 filtrar por instituicao e pesquisa

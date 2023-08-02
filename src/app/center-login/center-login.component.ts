@@ -2,6 +2,7 @@ import { FormsModule } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginServiceService } from '../services/login-service.service';
+import { last } from 'rxjs';
 
 @Component({
   selector: 'app-center-login',
@@ -25,6 +26,10 @@ export class CenterLoginComponent implements OnInit {
     this.login_service.login(this.cnpj);
   }
   public mascaraCNPJ(){
+    //let last_char = this.cnpj.charAt(this.cnpj.length - 1);
+    //if(isNaN(Number(last_char))){
+    //  console.log(this.cnpj.substring(0,this.cnpj.length-2));
+    //}
     if(this.cnpj.length == 2){
       this.cnpj = this.cnpj+".";
     }
@@ -37,5 +42,6 @@ export class CenterLoginComponent implements OnInit {
     if(this.cnpj.length == 15){
       this.cnpj = this.cnpj+"-";
     }
+    
   }
 }
