@@ -1,5 +1,6 @@
 consertar a porra do footer pelo amor de deus - ja fazem 15? dias
 pagina da ods
+    quantidade de projetos por ods - por enquanto ok mas fica pesado no mundo real
     estatisticas
     media de desenvolvimento entre os projetos
 pagina do projeto   
@@ -9,6 +10,7 @@ cadastro de instituicao
     mascaras
 cadastro de projetos
     adicionar instituicao ao projeto
+    adicionar imagens
     adicionar ods na criacao do projeto
 login
     validacao

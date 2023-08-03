@@ -13,6 +13,7 @@ import { OdsModel } from '../model/ods.model';
   styleUrls: ['./center-projeto.component.css']
 })
 export class CenterProjetoComponent implements OnInit {
+  file_path: string = '';
   private id: number | null;
   public todas_ods: OdsModel[] = [];
   public projeto: any;
@@ -76,5 +77,12 @@ export class CenterProjetoComponent implements OnInit {
     this.projeto_service.updateProj(this.projeto);
     this.editar_ods = false;
     //location.reload();
+  }
+  onFileSelected($event: any) {
+    console.log($event);
+    this.file_path = $event.target.files[0];
+  }
+  adicionarIMG(){
+    console.log(this.file_path);
   }
 }

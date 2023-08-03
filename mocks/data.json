@@ -20,12 +20,6 @@
               "nome": "Senac Tech",
               "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
               "projetos": []
-            },
-            {
-              "id": 2,
-              "nome": "Exemplo 2",
-              "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-              "projetos": []
             }
           ]
         }
@@ -51,12 +45,6 @@
               "nome": "Senac Tech",
               "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
               "projetos": []
-            },
-            {
-              "id": 2,
-              "nome": "Exemplo 2",
-              "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-              "projetos": []
             }
           ]
         }
@@ -80,12 +68,6 @@
             {
               "id": 1,
               "nome": "Senac Tech",
-              "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-              "projetos": []
-            },
-            {
-              "id": 2,
-              "nome": "Exemplo 2",
               "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
               "projetos": []
             }
@@ -376,12 +358,6 @@
                   "nome": "Senac Tech",
                   "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
                   "projetos": []
-                },
-                {
-                  "id": 2,
-                  "nome": "Exemplo 2",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
                 }
               ]
             }
@@ -405,12 +381,6 @@
                 {
                   "id": 1,
                   "nome": "Senac Tech",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
-                },
-                {
-                  "id": 2,
-                  "nome": "Exemplo 2",
                   "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
                   "projetos": []
                 }
@@ -447,12 +417,6 @@
                   "nome": "Senac Tech",
                   "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
                   "projetos": []
-                },
-                {
-                  "id": 2,
-                  "nome": "Exemplo 2",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
                 }
               ]
             }
@@ -474,12 +438,6 @@
           "id": 1,
           "nome": "Senac Tech",
           "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-          "projetos": []
-        },
-        {
-          "id": 2,
-          "nome": "Exemplo 2",
-          "endereco": "Av. Alberto Bins 810 Centro Histórico - PORTO ALEGRE - RS CEP 90030-142",
           "projetos": []
         }
       ],
@@ -541,15 +499,6 @@
       "descricao": "exemplohahaha",
       "ods": [
         {
-          "id": 12,
-          "cor": "rgb(191, 139, 46)",
-          "nome": "Consumo responsável",
-          "icone": "<i class=\"bi bi-infinity\"></i>",
-          "numero": 6,
-          "descricao": "Assegurar padrões de produção e de consumo sustentáveis.",
-          "projetos": []
-        },
-        {
           "id": 1,
           "cor": "rgb(229, 36, 59)",
           "nome": "Erradicação da pobreza",
@@ -569,87 +518,10 @@
                   "nome": "Senac Tech",
                   "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
                   "projetos": []
-                },
-                {
-                  "id": 2,
-                  "nome": "Exemplo 2",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
                 }
               ]
             }
           ]
-        },
-        {
-          "id": 14,
-          "cor": "rgb(10, 151, 217)",
-          "nome": "Vida na água",
-          "icone": "<i class=\"bi bi-water\"></i>",
-          "numero": 4,
-          "descricao": "Conservação e uso sustentável dos oceanos, dos mares, e dos recursos marinhos para o desenvolvimento sustentável.",
-          "projetos": []
-        },
-        {
-          "id": 9,
-          "cor": "rgb(253,105, 37)",
-          "nome": "Industria, inovação e infra",
-          "icone": "<i class=\"bi bi-boxes\"></i>",
-          "numero": 6,
-          "descricao": "Construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável, e fomentar a inovação.",
-          "projetos": [
-            {
-              "id": 2,
-              "nome": "Espelho Inteligente",
-              "descricao": "",
-              "ods": [
-                {
-                  "id": 7,
-                  "cor": "rgb(252, 195, 11)",
-                  "nome": "Energia limpa e acessível",
-                  "icone": "<i class=\"bi bi-sun-fill\"></i>",
-                  "numero": 1,
-                  "descricao": "",
-                  "projetos": []
-                },
-                {
-                  "id": 8,
-                  "cor": "rgb(162, 25, 66)",
-                  "nome": "Trabalho e econômia",
-                  "icone": "<i class=\"bi bi-bar-chart-fill\"></i>",
-                  "numero": 9,
-                  "descricao": "",
-                  "projetos": []
-                },
-                {
-                  "id": 9,
-                  "cor": "rgb(253,105, 37)",
-                  "nome": "Industria, inovação e infra",
-                  "icone": "<i class=\"bi bi-boxes\"></i>",
-                  "numero": 6,
-                  "descricao": "",
-                  "projetos": []
-                }
-              ],
-              "instituicoes": [
-                {
-                  "id": 1,
-                  "cor": "rgb(209, 167, 167)",
-                  "nome": "Senac Tech",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 10,
-          "cor": "rgb(221, 19, 103)",
-          "nome": "Redução de desigualdades",
-          "icone": "<i class=\"bi bi-align-middle\"></i>",
-          "numero": 10,
-          "descricao": "Reduzir as desigualdades dentro dos países e entre eles.",
-          "projetos": []
         }
       ],
       "cidade": "Porto Alegre",
@@ -761,12 +633,6 @@
             {
               "id": 1,
               "nome": "Senac Tech",
-              "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-              "projetos": []
-            },
-            {
-              "id": 2,
-              "nome": "Exemplo 2",
               "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
               "projetos": []
             }

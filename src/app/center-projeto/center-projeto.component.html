@@ -1,5 +1,15 @@
 <section class="center_main_section">
     <h1 style="color:black;">{{projeto.nome}} - {{projeto.cidade}}</h1>
+    <!--                                                                  adicionar imagem
+    <div class="add_ods_proj_div" *ngIf="minhaInsti()">
+        <input type="file" (change)="onFileSelected($event)">
+        <br>
+        <br>
+        <button class="add_img_input" (click)="adicionarIMG()">Adicionar Imagem</button>
+        <br>
+        <br>
+    </div>
+    -->
     <picture>
         <img *ngFor="let img of projeto.imagens" class="img_class" src={{img}}/>
     </picture>
@@ -14,9 +24,10 @@
             {{insti.nome}}
         </h3>
     </div>
-    <div class="add_ods_proj_div" *ngIf="minhaInsti()">
-        <hr>
-        <h3 (click)="editarODS()">Editar ODS</h3>
+    <div class="add_ods_proj_div" *ngIf="minhaInsti() && !editar_ods">
+        <form class="default_form">
+            <button (click)="editarODS()">Editar ODS</button>
+        </form>
     </div>
     <hr>
     <div *ngIf="editar_ods">

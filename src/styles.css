@@ -48,6 +48,23 @@ ul.topnav li a:hover{
   font-size:17px;
 }
 /*--------------------------------------------------------------------------------center main*/
+.add_img_input{
+  transition: 200ms;
+  padding:20px;
+  background: none;
+  background-color: rgb(255, 153, 0);
+	color: white;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.add_img_input:hover{
+  color: white;
+  background-color: rgb(0, 89, 255);
+}
 .center_main_section{
   margin: auto;
   position: absolute;
