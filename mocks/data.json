@@ -452,31 +452,29 @@
       "descricao": "Projeto criado por alunos e professores do Senac Tech com o objetio de inovar a indústria de vestimentas e além com a utilização de tecnologias como inteligência artificial para uma melhor e mais imersiva experiencia do usuário.",
       "ods": [
         {
-          "id": 7,
-          "cor": "rgb(252, 195, 11)",
-          "nome": "Energia limpa e acessível",
-          "icone": "<i class=\"bi bi-sun-fill\"></i>",
-          "numero": 1,
-          "descricao": "",
-          "projetos": []
-        },
-        {
-          "id": 8,
-          "cor": "rgb(162, 25, 66)",
-          "nome": "Trabalho e econômia",
-          "icone": "<i class=\"bi bi-bar-chart-fill\"></i>",
-          "numero": 9,
-          "descricao": "",
-          "projetos": []
-        },
-        {
-          "id": 9,
-          "cor": "rgb(253,105, 37)",
-          "nome": "Industria, inovação e infra",
-          "icone": "<i class=\"bi bi-boxes\"></i>",
-          "numero": 6,
-          "descricao": "",
-          "projetos": []
+          "id": 1,
+          "cor": "rgb(229, 36, 59)",
+          "nome": "Erradicação da pobreza",
+          "icone": "../../assets/imgs/ODS/sdg1.png",
+          "numero": 2,
+          "descricao": "Acabar com a pobreza em todas as suas formas, em todos os lugares.",
+          "projetos": [
+            {
+              "id": 1,
+              "nome": "PIDS Tech",
+              "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
+              "ods": [],
+              "cidade": "Porto Alegre",
+              "instituicoes": [
+                {
+                  "id": 1,
+                  "nome": "Senac Tech",
+                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
+                  "projetos": []
+                }
+              ]
+            }
+          ]
         }
       ],
       "cidade": "Porto Alegre",
@@ -591,7 +589,7 @@
   "instituicoes": [
     {
       "id": 1,
-      "cnpj": "264827364782364",
+      "cnpj": "11.111.111/1111-11",
       "nome": "Senac Tech",
       "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
       "projetos": [
