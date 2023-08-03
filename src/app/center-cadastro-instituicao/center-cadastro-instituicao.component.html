@@ -6,7 +6,7 @@
           <label class="criar_conta_label">CNPJ</label>
           <br>
           <br>
-          <input type="text" class="form_input" [(ngModel)]="cnpj" placeholder="12.345.678/0001-00">
+          <input type="text" class="form_input" (input)="mascaraCNPJ()" maxlength="18" [(ngModel)]="cnpj" name="cnpj" placeholder="12.345.678/0001-00">
           <br>
           <br>
           <label class="criar_conta_label">Senha</label>

@@ -339,88 +339,13 @@
       "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
       "ods": [
         {
-          "id": 1,
-          "cor": "rgb(229, 36, 59)",
-          "nome": "Erradicação da pobreza",
-          "icone": "../../assets/imgs/ODS/sdg1.png",
+          "id": 11,
+          "cor": "rgb(253, 157, 36)",
+          "nome": "Comunidades sustentaveis",
+          "icone": "<i class=\"bi bi-buildings-fill\"></i>",
           "numero": 2,
-          "descricao": "Acabar com a pobreza em todas as suas formas, em todos os lugares.",
-          "projetos": [
-            {
-              "id": 1,
-              "nome": "PIDS Tech",
-              "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
-              "ods": [],
-              "cidade": "Porto Alegre",
-              "instituicoes": [
-                {
-                  "id": 1,
-                  "nome": "Senac Tech",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "cor": "rgb(221, 168, 58)",
-          "nome": "Agricultura sustentável",
-          "icone": "<i class=\"bi bi-egg-fill\"></i>",
-          "numero": 6,
-          "descricao": "Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável.",
-          "projetos": [
-            {
-              "id": 1,
-              "nome": "PIDS Tech",
-              "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
-              "ods": [],
-              "cidade": "Porto Alegre",
-              "instituicoes": [
-                {
-                  "id": 1,
-                  "nome": "Senac Tech",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 14,
-          "cor": "rgb(10, 151, 217)",
-          "nome": "Vida na água",
-          "icone": "<i class=\"bi bi-water\"></i>",
-          "numero": 4,
-          "descricao": "Conservação e uso sustentável dos oceanos, dos mares, e dos recursos marinhos para o desenvolvimento sustentável.",
+          "descricao": "Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis.",
           "projetos": []
-        },
-        {
-          "id": 3,
-          "cor": "rgb(76, 159, 56)",
-          "nome": "Saúde e bem estar",
-          "icone": "<i class=\"bi bi-heart-pulse-fill\"></i>",
-          "numero": 7,
-          "descricao": "Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.",
-          "projetos": [
-            {
-              "id": 1,
-              "nome": "PIDS Tech",
-              "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
-              "ods": [],
-              "cidade": "Porto Alegre",
-              "instituicoes": [
-                {
-                  "id": 1,
-                  "nome": "Senac Tech",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
-                }
-              ]
-            }
-          ]
         },
         {
           "id": 4,
@@ -430,6 +355,76 @@
           "numero": 9,
           "descricao": "Assegurar a educação inclusiva, e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos.",
           "projetos": []
+        },
+        {
+          "id": 15,
+          "cor": "rgb(86, 192, 43)",
+          "nome": "Vida terrestre",
+          "icone": "<i class=\"bi bi-tree-fill\"></i>",
+          "numero": 2,
+          "descricao": "Promover sociedades pacíficas e inclusivas par ao desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis.",
+          "projetos": []
+        },
+        {
+          "id": 16,
+          "cor": "rgb(0, 104, 157)",
+          "nome": "Paz justiça e eficácia",
+          "icone": "<i class=\"bi bi-peace\"></i>",
+          "numero": 5,
+          "descricao": "Promover sociedades pacificas e inclusivas para desenvolvimento sustentável, providenciar acesso à justiça à todos e construir instituições inclusivas e responsáveis em todos os níveis.",
+          "projetos": []
+        },
+        {
+          "id": 8,
+          "cor": "rgb(162, 25, 66)",
+          "nome": "Trabalho e econômia",
+          "icone": "<i class=\"bi bi-bar-chart-fill\"></i>",
+          "numero": 9,
+          "descricao": "Promover crescimento econômico sustentável e inclusivo, cheio de empregabilidade decente e produtiva para todos.",
+          "projetos": [
+            {
+              "id": 2,
+              "nome": "Espelho Inteligente",
+              "descricao": "",
+              "ods": [
+                {
+                  "id": 7,
+                  "cor": "rgb(252, 195, 11)",
+                  "nome": "Energia limpa e acessível",
+                  "icone": "<i class=\"bi bi-sun-fill\"></i>",
+                  "numero": 1,
+                  "descricao": "",
+                  "projetos": []
+                },
+                {
+                  "id": 8,
+                  "cor": "rgb(162, 25, 66)",
+                  "nome": "Trabalho e econômia",
+                  "icone": "<i class=\"bi bi-bar-chart-fill\"></i>",
+                  "numero": 9,
+                  "descricao": "",
+                  "projetos": []
+                },
+                {
+                  "id": 9,
+                  "cor": "rgb(253,105, 37)",
+                  "nome": "Industria, inovação e infra",
+                  "icone": "<i class=\"bi bi-boxes\"></i>",
+                  "numero": 6,
+                  "descricao": "",
+                  "projetos": []
+                }
+              ],
+              "instituicoes": [
+                {
+                  "id": 1,
+                  "nome": "Senac Tech",
+                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
+                  "projetos": []
+                }
+              ]
+            }
+          ]
         }
       ],
       "cidade": "Porto Alegre",
@@ -497,29 +492,58 @@
       "descricao": "exemplohahaha",
       "ods": [
         {
-          "id": 1,
-          "cor": "rgb(229, 36, 59)",
-          "nome": "Erradicação da pobreza",
-          "icone": "../../assets/imgs/ODS/sdg1.png",
+          "id": 10,
+          "cor": "rgb(221, 19, 103)",
+          "nome": "Redução de desigualdades",
+          "icone": "<i class=\"bi bi-align-middle\"></i>",
+          "numero": 10,
+          "descricao": "Reduzir as desigualdades dentro dos países e entre eles.",
+          "projetos": []
+        },
+        {
+          "id": 11,
+          "cor": "rgb(253, 157, 36)",
+          "nome": "Comunidades sustentaveis",
+          "icone": "<i class=\"bi bi-buildings-fill\"></i>",
           "numero": 2,
-          "descricao": "Acabar com a pobreza em todas as suas formas, em todos os lugares.",
-          "projetos": [
-            {
-              "id": 1,
-              "nome": "PIDS Tech",
-              "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
-              "ods": [],
-              "cidade": "Porto Alegre",
-              "instituicoes": [
-                {
-                  "id": 1,
-                  "nome": "Senac Tech",
-                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
-                  "projetos": []
-                }
-              ]
-            }
-          ]
+          "descricao": "Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis.",
+          "projetos": []
+        },
+        {
+          "id": 12,
+          "cor": "rgb(191, 139, 46)",
+          "nome": "Consumo responsável",
+          "icone": "<i class=\"bi bi-infinity\"></i>",
+          "numero": 6,
+          "descricao": "Assegurar padrões de produção e de consumo sustentáveis.",
+          "projetos": []
+        },
+        {
+          "id": 13,
+          "cor": "rgb(63, 126, 68)",
+          "nome": "Luta pelo clima",
+          "icone": "<i class=\"bi bi-globe-americas\"></i>",
+          "numero": 9,
+          "descricao": "Tomar medidas urgentes para combater a mudança climática e seus impactos (*).",
+          "projetos": []
+        },
+        {
+          "id": 14,
+          "cor": "rgb(10, 151, 217)",
+          "nome": "Vida na água",
+          "icone": "<i class=\"bi bi-water\"></i>",
+          "numero": 4,
+          "descricao": "Conservação e uso sustentável dos oceanos, dos mares, e dos recursos marinhos para o desenvolvimento sustentável.",
+          "projetos": []
+        },
+        {
+          "id": 15,
+          "cor": "rgb(86, 192, 43)",
+          "nome": "Vida terrestre",
+          "icone": "<i class=\"bi bi-tree-fill\"></i>",
+          "numero": 2,
+          "descricao": "Promover sociedades pacíficas e inclusivas par ao desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis.",
+          "projetos": []
         }
       ],
       "cidade": "Porto Alegre",
@@ -690,7 +714,7 @@
     },
     {
       "id": 2,
-      "cnpj": "2",
+      "cnpj": "22.222.222/2222-22",
       "nome": "Exemplo 2",
       "endereco": "Av. Alberto Bins 810 Centro Histórico - PORTO ALEGRE - RS CEP 90030-142",
       "projetos": [

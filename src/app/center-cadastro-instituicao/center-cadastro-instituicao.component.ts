@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { InstituicaoModel } from '../model/instituicao.model';
 import { GetInstituicaoService } from '../services/get-instituicao.service';
 
@@ -21,7 +21,7 @@ export class CenterCadastroInstituicaoComponent implements OnInit {
   descricao: string= '';
   
 
-  constructor(private insti_service: GetInstituicaoService) { }
+  constructor(private insti_service: GetInstituicaoService, private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -38,5 +38,25 @@ export class CenterCadastroInstituicaoComponent implements OnInit {
       website: this.website
     }
     this.insti_service.criarInstituicao(insti);
+    this.router.navigate(['center-main']);
+  }
+  public mascaraCNPJ(){
+    //let last_char = this.cnpj.charAt(this.cnpj.length - 1);
+    //if(isNaN(Number(last_char))){
+    //  console.log(this.cnpj.substring(0,this.cnpj.length-2));
+    //}
+    if(this.cnpj.length == 2){
+      this.cnpj = this.cnpj+".";
+    }
+    if(this.cnpj.length == 6){
+      this.cnpj = this.cnpj+".";
+    }
+    if(this.cnpj.length == 10){
+      this.cnpj = this.cnpj+"/";
+    }
+    if(this.cnpj.length == 15){
+      this.cnpj = this.cnpj+"-";
+    }
+    
   }
 }

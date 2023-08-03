@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { OdsModel } from '../model/ods.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { InstituicaoModel } from '../model/instituicao.model';
 
 @Injectable({
   providedIn: 'root'
@@ -30,5 +31,8 @@ export class GetOdsService {
   }
   public getAllODS():Observable<OdsModel[]>{
     return this.http.get<OdsModel[]>('http://localhost:3000/ods');
+  }
+  public addInsti(ods:OdsModel){
+    this.http.put('http://localhost:3000/ods/'+ods.id, ods).subscribe();
   }
 }

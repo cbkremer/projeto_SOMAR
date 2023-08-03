@@ -219,6 +219,9 @@ img{
   /*unnecessary but does not hurt*/
 }
 /*--------------------------------------------------------------------------------default form*/
+.aviso_conta_info{
+  color:red;
+}
 ::placeholder{
   color: rgb(165, 165, 165);
 }
