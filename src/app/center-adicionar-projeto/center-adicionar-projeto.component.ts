@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Projeto } from '../model/projeto.model';
 import { InstituicaoModel } from '../model/instituicao.model';
 import { GetInstituicaoService } from '../services/get-instituicao.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { GetProjetosService } from '../services/get-projetos.service';
 import { OdsModel } from '../model/ods.model';
 import { GetOdsService } from '../services/get-ods.service';
@@ -31,7 +31,8 @@ export class CenterAdicionarProjetoComponent implements OnInit {
     private insti_service:GetInstituicaoService, 
     private act_route:ActivatedRoute,
     private proj_service:GetProjetosService,
-    private ods_service: GetOdsService
+    private ods_service: GetOdsService,
+    private router:Router
   ) 
   {
     this.insti_service.getInstituicaoById(Number(this.act_route.snapshot.paramMap.get('id'))).subscribe((insti:InstituicaoModel) =>{
@@ -61,6 +62,8 @@ export class CenterAdicionarProjetoComponent implements OnInit {
     }
     console.log(projeto);
     this.proj_service.addProj(projeto);
+    this.ods_service.setChosenODS(0);
+    this.router.navigate(['center-projetos']);
   }
   checarODS(){
     let chosen_ods = this.ods_service.getChosenODS();

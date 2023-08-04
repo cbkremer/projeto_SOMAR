@@ -6,7 +6,7 @@ export interface InstituicaoModel{
     nome: string;
     endereco: string;
     projetos: Projeto[];
-    contato: string;
+    telefone: string;
     website: string;
     imagens: string[];
     descricao: string;

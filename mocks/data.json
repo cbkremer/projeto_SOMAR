@@ -488,18 +488,9 @@
     },
     {
       "id": 3,
-      "nome": "exemplo3",
-      "descricao": "exemplohahaha",
+      "nome": "projeto exemplo 3",
+      "descricao": " descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3descricao projeto 3",
       "ods": [
-        {
-          "id": 10,
-          "cor": "rgb(221, 19, 103)",
-          "nome": "Redução de desigualdades",
-          "icone": "<i class=\"bi bi-align-middle\"></i>",
-          "numero": 10,
-          "descricao": "Reduzir as desigualdades dentro dos países e entre eles.",
-          "projetos": []
-        },
         {
           "id": 11,
           "cor": "rgb(253, 157, 36)",
@@ -510,49 +501,21 @@
           "projetos": []
         },
         {
-          "id": 12,
-          "cor": "rgb(191, 139, 46)",
-          "nome": "Consumo responsável",
-          "icone": "<i class=\"bi bi-infinity\"></i>",
+          "id": 10,
+          "cor": "rgb(221, 19, 103)",
+          "nome": "Redução de desigualdades",
+          "icone": "<i class=\"bi bi-align-middle\"></i>",
+          "numero": 10,
+          "descricao": "Reduzir as desigualdades dentro dos países e entre eles.",
+          "projetos": []
+        },
+        {
+          "id": 9,
+          "cor": "rgb(253,105, 37)",
+          "nome": "Industria, inovação e infra",
+          "icone": "<i class=\"bi bi-boxes\"></i>",
           "numero": 6,
-          "descricao": "Assegurar padrões de produção e de consumo sustentáveis.",
-          "projetos": []
-        },
-        {
-          "id": 13,
-          "cor": "rgb(63, 126, 68)",
-          "nome": "Luta pelo clima",
-          "icone": "<i class=\"bi bi-globe-americas\"></i>",
-          "numero": 9,
-          "descricao": "Tomar medidas urgentes para combater a mudança climática e seus impactos (*).",
-          "projetos": []
-        },
-        {
-          "id": 14,
-          "cor": "rgb(10, 151, 217)",
-          "nome": "Vida na água",
-          "icone": "<i class=\"bi bi-water\"></i>",
-          "numero": 4,
-          "descricao": "Conservação e uso sustentável dos oceanos, dos mares, e dos recursos marinhos para o desenvolvimento sustentável.",
-          "projetos": []
-        },
-        {
-          "id": 15,
-          "cor": "rgb(86, 192, 43)",
-          "nome": "Vida terrestre",
-          "icone": "<i class=\"bi bi-tree-fill\"></i>",
-          "numero": 2,
-          "descricao": "Promover sociedades pacíficas e inclusivas par ao desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis.",
-          "projetos": []
-        }
-      ],
-      "cidade": "Porto Alegre",
-      "instituicoes": [
-        {
-          "id": 2,
-          "cnpj": "2",
-          "nome": "Exemplo 2",
-          "endereco": "Av. Alberto Bins 810 Centro Histórico - PORTO ALEGRE - RS CEP 90030-142",
+          "descricao": "Construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável, e fomentar a inovação.",
           "projetos": [
             {
               "id": 2,
@@ -587,24 +550,31 @@
                   "projetos": []
                 }
               ],
-              "cidade": "Porto Alegre",
               "instituicoes": [
                 {
                   "id": 1,
+                  "cor": "rgb(209, 167, 167)",
                   "nome": "Senac Tech",
                   "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
                   "projetos": []
                 }
               ]
             }
-          ],
-          "telefone": "(51) 3288-7750",
-          "website": "https://www.senacrs.com.br/unidade/18",
-          "imagens": [
-            "../../assets/imgs/senac1.jpg",
-            "../../assets/imgs/senac3.jpg"
-          ],
-          "descricao": "Escola técnica situada em Porto Alegre RS que é ponto de referência em educação e formação de profissionais prontos para o mercado de trabalho com um foco em criar uma futuro melhor e mais tecnológico."
+          ]
+        }
+      ],
+      "cidade": "Porto Alegre",
+      "instituicoes": [
+        {
+          "id": 3,
+          "cnpj": "33.333.333/3333-33",
+          "nome": "exemplo 3",
+          "endereco": "Porto Alegre av america 65",
+          "projetos": [],
+          "telefone": "(51) 98756-8746",
+          "descricao": "descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3",
+          "imagens": [],
+          "website": "https://www.fecomercio-rs.org.br/home"
         }
       ],
       "imagens": []
@@ -704,7 +674,7 @@
           ]
         }
       ],
-      "telefone": "(51) 3288-7750",
+      "telefone": "(51) 3289-7750",
       "website": "https://www.senacrs.com.br/unidade/18",
       "imagens": [
         "../../assets/imgs/senac1.jpg",
@@ -769,6 +739,17 @@
         "../../assets/imgs/senac3.jpg"
       ],
       "descricao": "Escola técnica situada em Porto Alegre RS que é ponto de referência em educação e formação de profissionais prontos para o mercado de trabalho com um foco em criar uma futuro melhor e mais tecnológico."
+    },
+    {
+      "id": 3,
+      "cnpj": "33.333.333/3333-33",
+      "nome": "exemplo 3",
+      "endereco": "Porto Alegre av america 65",
+      "projetos": [],
+      "telefone": "(51) 98756-8746",
+      "descricao": "descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3",
+      "imagens": [],
+      "website": "https://www.fecomercio-rs.org.br/home"
     }
   ]
 }

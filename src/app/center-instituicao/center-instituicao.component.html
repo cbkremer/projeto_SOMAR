@@ -3,7 +3,9 @@
     <h2>{{instituicao.endereco}}</h2>
     <hr>
     <div *ngIf="minhaInsti()">
-      <h1 (click)="adicionarProj()">Adicionar Projeto</h1>
+      <form class="default_form">
+        <button type="button" (click)="adicionarProj()">Adicionar Projeto</button>
+      </form>
     </div>
     <picture>
       <img *ngFor="let img of instituicao.imagens" class="img_class" src={{img}}>

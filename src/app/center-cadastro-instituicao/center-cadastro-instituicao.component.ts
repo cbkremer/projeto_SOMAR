@@ -32,7 +32,7 @@ export class CenterCadastroInstituicaoComponent implements OnInit {
       nome: this.nome, 
       endereco: this.endereco, 
       projetos: [], 
-      contato: this.contato, 
+      telefone: this.contato, 
       descricao: this.descricao, 
       imagens: [], 
       website: this.website
