@@ -26,13 +26,6 @@ export class GetInstituicaoService {
     this.http.post<InstituicaoModel>("http://localhost:3000/instituicoes", insti).subscribe();
   }
   public atualizarInstituicao(insti:InstituicaoModel){
-    this.http.put<InstituicaoModel>("http://localhost:3000/instituicoes/"+insti.id, insti).subscribe(
-      data => {
-        console.log("acho q deu: "+data);
-      },
-      error => {
-        console.log("kkkkk: "+error);
-      }
-    );
+    this.http.put("http://localhost:3000/instituicoes/"+insti.id, insti).subscribe();
   }
 }

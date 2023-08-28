@@ -63,7 +63,7 @@ export class CenterAdicionarProjetoComponent implements OnInit {
     console.log(projeto);
     this.proj_service.addProj(projeto);
     this.ods_service.setChosenODS(0);
-    this.router.navigate(['center-projetos']);
+    this.waitAndUpdateInsti(1000,projeto);
   }
   checarODS(){
     let chosen_ods = this.ods_service.getChosenODS();
@@ -80,5 +80,18 @@ export class CenterAdicionarProjetoComponent implements OnInit {
         this.novas_ods.splice(i,1);
       }
     }
+  }
+  waitAndUpdateInsti(ms: number, projeto: Projeto){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+    }
+    console.log("1: "+this.institu.projetos.length);
+    projeto.instituicoes = [];
+    this.institu.projetos.push(projeto);
+    console.log("2: "+this.institu.projetos.length);
+    this.insti_service.atualizarInstituicao(this.institu);
+    this.router.navigate(['center-projetos']);
   }
 }

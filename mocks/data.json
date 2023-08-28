@@ -718,8 +718,8 @@
     },
     {
       "id": 5,
-      "nome": "tetetet",
-      "descricao": "etetet",
+      "nome": "3",
+      "descricao": "3",
       "ods": [
         {
           "id": 1,
@@ -747,7 +747,7 @@
           ]
         }
       ],
-      "cidade": "tetete",
+      "cidade": "3",
       "instituicoes": [
         {
           "id": 3,
@@ -929,7 +929,43 @@
       "cnpj": "33.333.333/3333-33",
       "nome": "exemplo 3",
       "endereco": "Porto Alegre av america 65",
-      "projetos": [],
+      "projetos": [
+        {
+          "id": 0,
+          "nome": "3",
+          "descricao": "3",
+          "ods": [
+            {
+              "id": 1,
+              "cor": "rgb(229, 36, 59)",
+              "nome": "Erradicação da pobreza",
+              "icone": "../../assets/imgs/ODS/sdg1.png",
+              "numero": 2,
+              "descricao": "Acabar com a pobreza em todas as suas formas, em todos os lugares.",
+              "projetos": [
+                {
+                  "id": 1,
+                  "nome": "PIDS Tech",
+                  "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
+                  "ods": [],
+                  "cidade": "Porto Alegre",
+                  "instituicoes": [
+                    {
+                      "id": 1,
+                      "nome": "Senac Tech",
+                      "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
+                      "projetos": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "cidade": "3",
+          "instituicoes": [],
+          "imagens": []
+        }
+      ],
       "telefone": "(51) 98756-8746",
       "descricao": "descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3",
       "imagens": [],

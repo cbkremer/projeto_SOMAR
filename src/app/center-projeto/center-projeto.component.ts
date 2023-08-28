@@ -113,6 +113,7 @@ export class CenterProjetoComponent implements OnInit {
       this.cnpj = this.cnpj+"-";
     }
   }
+  //nao utlizado,ué???
   salvarInsti(){
     let insti: InstituicaoModel[] = [];
     this.insti_service.getInstituicaoByCNPJ(this.cnpj).subscribe(
