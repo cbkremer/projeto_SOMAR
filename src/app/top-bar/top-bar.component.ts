@@ -41,7 +41,10 @@ export class TopBarComponent implements OnInit {
     }
   }
   goToMinhaInsti(){
-    this.router.navigate(['center-instituicao/'+sessionStorage.getItem('user_id')]);
+    this.router.navigate(['center-instituicao/'+sessionStorage.getItem('user_id')]).then(() => {
+      console.log('hahahaha');
+      window.location.reload();
+    });
   }
   logout(){
     this.login_service.logout();
