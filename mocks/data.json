@@ -762,6 +762,107 @@
         }
       ],
       "imagens": []
+    },
+    {
+      "id": 6,
+      "nome": "4",
+      "descricao": "4",
+      "ods": [
+        {
+          "id": 3,
+          "cor": "rgb(76, 159, 56)",
+          "nome": "Saúde e bem estar",
+          "icone": "<i class=\"bi bi-heart-pulse-fill\"></i>",
+          "numero": 7,
+          "descricao": "Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.",
+          "projetos": [
+            {
+              "id": 1,
+              "nome": "PIDS Tech",
+              "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
+              "ods": [],
+              "cidade": "Porto Alegre",
+              "instituicoes": [
+                {
+                  "id": 1,
+                  "nome": "Senac Tech",
+                  "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
+                  "projetos": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "cor": "rgb(197, 25, 45)",
+          "nome": "Educação de qualidade",
+          "icone": "<i class=\"bi bi-pencil-fill\"></i>",
+          "numero": 9,
+          "descricao": "Assegurar a educação inclusiva, e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos.",
+          "projetos": []
+        },
+        {
+          "id": 5,
+          "cor": "rgb(255, 58, 33)",
+          "nome": "Igualdade de gênero",
+          "icone": "<i class=\"bi bi-gender-ambiguous\"></i>",
+          "numero": 5,
+          "descricao": "Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas.",
+          "projetos": []
+        }
+      ],
+      "cidade": "4",
+      "instituicoes": [
+        {
+          "id": 3,
+          "cnpj": "33.333.333/3333-33",
+          "nome": "exemplo 3",
+          "endereco": "Porto Alegre av america 65",
+          "projetos": [
+            {
+              "id": 5,
+              "nome": "3",
+              "descricao": "3",
+              "ods": [
+                {
+                  "id": 1,
+                  "cor": "rgb(229, 36, 59)",
+                  "nome": "Erradicação da pobreza",
+                  "icone": "../../assets/imgs/ODS/sdg1.png",
+                  "numero": 2,
+                  "descricao": "Acabar com a pobreza em todas as suas formas, em todos os lugares.",
+                  "projetos": [
+                    {
+                      "id": 1,
+                      "nome": "PIDS Tech",
+                      "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
+                      "ods": [],
+                      "cidade": "Porto Alegre",
+                      "instituicoes": [
+                        {
+                          "id": 1,
+                          "nome": "Senac Tech",
+                          "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
+                          "projetos": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "cidade": "3",
+              "instituicoes": [],
+              "imagens": []
+            }
+          ],
+          "telefone": "(51) 98756-8746",
+          "descricao": "descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3descricao exemplo 3",
+          "imagens": [],
+          "website": "https://www.fecomercio-rs.org.br/home"
+        }
+      ],
+      "imagens": []
     }
   ],
   "instituicoes": [
@@ -931,7 +1032,7 @@
       "endereco": "Porto Alegre av america 65",
       "projetos": [
         {
-          "id": 0,
+          "id": 5,
           "nome": "3",
           "descricao": "3",
           "ods": [
@@ -962,6 +1063,41 @@
             }
           ],
           "cidade": "3",
+          "instituicoes": [],
+          "imagens": []
+        },
+        {
+          "id": 6,
+          "nome": "4",
+          "descricao": "4",
+          "ods": [
+            {
+              "id": 1,
+              "cor": "rgb(229, 36, 59)",
+              "nome": "Erradicação da pobreza",
+              "icone": "../../assets/imgs/ODS/sdg1.png",
+              "numero": 2,
+              "descricao": "Acabar com a pobreza em todas as suas formas, em todos os lugares.",
+              "projetos": [
+                {
+                  "id": 1,
+                  "nome": "PIDS Tech",
+                  "descricao": "Para quem possui computadores desktop, laptop, monitores, teclado e mouse que não utiliza mais e não sabe como descartá-los da maneira correta, eles podem ter um destino útil e solidário. Isso porque o Senac Tech recebe anualmente doações em sua escola por meio do PIDS Tech — Programa de inclusão digital Senac Tech — , que consiste em coletar computadores para que instituições, escolas, ONGS, ou até mesmo alunos da escola, que ainda não tenham condições financeiras para a compra desses equipamentos, possam ter acesso à informação e às tecnologias.",
+                  "ods": [],
+                  "cidade": "Porto Alegre",
+                  "instituicoes": [
+                    {
+                      "id": 1,
+                      "nome": "Senac Tech",
+                      "endereco": "Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre - RS, 90040-191",
+                      "projetos": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "cidade": "4",
           "instituicoes": [],
           "imagens": []
         }

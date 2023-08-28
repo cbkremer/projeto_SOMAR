@@ -18,7 +18,7 @@ export class CenterAdicionarProjetoComponent implements OnInit {
   public todas_ods: OdsModel[] = [];
   public projeto: any;
   public novas_ods: OdsModel[] = [];
-
+  public id: Number = 0;
   public institu: any;
 
   public aviso: string = '';
@@ -60,10 +60,10 @@ export class CenterAdicionarProjetoComponent implements OnInit {
       instituicoes: insti_list,
       imagens: []
     }
-    console.log(projeto);
-    this.proj_service.addProj(projeto);
     this.ods_service.setChosenODS(0);
-    this.waitAndUpdateInsti(1000,projeto);
+    this.proj_service.addProj2(projeto).subscribe(data => {
+      this.waitAndUpdateInsti(1000,projeto,data.id);
+    });
   }
   checarODS(){
     let chosen_ods = this.ods_service.getChosenODS();
@@ -81,16 +81,16 @@ export class CenterAdicionarProjetoComponent implements OnInit {
       }
     }
   }
-  waitAndUpdateInsti(ms: number, projeto: Projeto){
+  waitAndUpdateInsti(ms: number, projeto: Projeto, id: Number){
     var start = new Date().getTime();
     var end = start;
     while(end < start + ms) {
       end = new Date().getTime();
     }
-    console.log("1: "+this.institu.projetos.length);
     projeto.instituicoes = [];
+    projeto.id = id.valueOf();
+    console.log("id projeto: "+projeto.id);
     this.institu.projetos.push(projeto);
-    console.log("2: "+this.institu.projetos.length);
     this.insti_service.atualizarInstituicao(this.institu);
     this.router.navigate(['center-projetos']);
   }
